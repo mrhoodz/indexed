@@ -1,0 +1,140 @@
+@import "./colors";
+
+body {
+  background-color: whitesmoke;
+}
+
+h1 {
+  // DISPLAY
+
+  // BOX MODEL
+
+  // TYPOGRAPHY
+
+  font-family: Poppins;
+  font-weight: bolder;
+  font-size: 76rem;
+  line-height: 94rem;
+  color: $primary-text-color;
+}
+
+article h2 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 53rem;
+  line-height: 63.6rem;
+  color: $primary-color;
+}
+
+article p {
+
+  margin-top: 34rem;
+  
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 25rem;
+  letter-spacing: 0.02em;
+  line-height: 34rem;
+  text-align: left;
+  color: $primary-background-color;
+}
+
+article .p-small {
+
+
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 21rem;
+  letter-spacing: 0.02em;
+  line-height: 34rem;
+  text-align: left;
+  color: $primary-background-color;
+}
+
+.buttoned {
+  background: $secondary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // BOX MODEL
+  width: 235.15rem;
+  height: 70.41rem;
+  border-radius: 999rem;
+
+  // TYPOGRAPHY
+  font-family: Poppins;
+  font-weight: bolder;
+  font-size: 21.63rem;
+  line-height: 25.95rem;
+  text-align: left;
+
+
+
+  &:hover{
+    background-color: $primary-background-color;
+  }
+  // color: pink;
+}
+
+.header {
+  // DISPLAY
+  display: flex;
+  gap: 39rem;
+
+  // BOX MODEL
+
+  // TYPOGRAPHY
+}
+
+.p {
+  // DISPLAY
+
+  // BOX MODEL
+  margin-top: 34rem;
+  width: 664rem;
+
+  // TYPOGRAPHY
+}
+
+.hero {
+  // DISPLAY
+  position: relative;
+
+  // BOX MODEL
+  width: 1277.73rem;
+  height: 456.41rem;
+  // background: limegreen;
+  margin-top: 46.3rem;
+  margin-bottom: 30rem;
+  overflow: hidden;
+
+  // TYPOGRAPHY
+}
+
+.hero-bigger {
+  // DISPLAY
+  position: relative;
+
+  // BOX MODEL
+  width: 1419.73rem;
+  height: 561.41rem;
+  // background: limegreen;
+  margin-top: 46.3rem;
+  margin-bottom: 30rem;
+  overflow: hidden;
+
+  // TYPOGRAPHY
+}
+
+.heroimg {
+  // DISPLAY
+  position: absolute;
+
+  // BOX MODEL
+  margin-top: -62.3rem;
+  width: 100%;
+  height: auto;
+
+  // TYPOGRAPHY
+}

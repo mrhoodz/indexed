@@ -1,0 +1,26 @@
+@import "../../styles/colors";
+
+.article {
+  // DISPLAY
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+
+  // BOX MODEL
+  padding-top: 146rem;
+  margin-inline: auto;
+  width: 1423rem;
+
+  // TYPOGRAPHY
+}
+
+.p {
+  // DISPLAY
+
+  // BOX MODEL
+  width: 835rem;
+  margin-top: 34rem;
+
+  // TYPOGRAPHY
+}

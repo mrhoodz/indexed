@@ -1,0 +1,41 @@
+@import "../../../styles/colors";
+
+
+.span {
+  // DISPLAY
+  display: flex;
+  gap: 68rem;
+
+  // BOX MODEL
+
+  // TYPOGRAPHY
+
+
+
+
+& a{
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-family: Poppins Medium;
+    font-weight: normal;
+    font-size: 22rem;
+    line-height: 21.6rem;
+    color:whitesmoke;
+  
+  
+  &:hover{
+    color:$secondary-color ;
+  }
+  
+  }
+
+
+
+
+
+
+
+}
+
+

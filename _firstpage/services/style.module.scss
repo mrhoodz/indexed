@@ -1,0 +1,91 @@
+@import "../../styles/colors";
+
+.ourservices {
+  // DISPLAY
+  position: relative;
+
+  // BOX MODEL
+  width: 1437rem;
+  // min-height: 1524rem;
+  margin-top: 95.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  // TYPOGRAPHY
+}
+
+.infoWrapper {
+  // DISPLAY
+  position: relative;
+  display: flex;
+  gap: 38.7rem;
+
+  // BOX MODEL
+
+  // TYPOGRAPHY
+
+  // & h2 {
+  //   // DISPLAY
+
+  //   // BOX MODEL
+
+  //   // TYPOGRAPHY
+  //   // font-family: Poppins;
+  //   // font-weight: bold;
+  //   // font-size: 53rem;
+  //   // line-height: 63.6rem;
+  //   // color: $primary-color;
+  // }
+
+  // & a {
+  //   // DISPLAY
+  //   // background: $secondary-color;
+  //   // display: flex;
+  //   // justify-content: center;
+  //   // align-items: center;
+
+  //   // // BOX MODEL
+  //   // width: 235.15rem;
+  //   // height: 70.41rem;
+  //   // border-radius: 999rem;
+
+  //   // // TYPOGRAPHY
+  //   // font-family: Poppins;
+  //   // font-weight: bolder;
+  //   // font-size: 21.63rem;
+  //   // line-height: 25.95rem;
+  //   // text-align: left;
+  //   // color: $primary-text-color;
+  // }
+}
+
+.pcontent {
+  // DISPLAY
+
+  // BOX MODEL
+  width: 664rem;
+  height: 97rem;
+  margin-top: 29.5rem;
+
+  // TYPOGRAPHY
+  // font-family: Poppins;
+  // font-weight: normal;
+  // font-size: 21rem;
+  // letter-spacing: 0.02em;
+  // line-height: 34rem;
+  // text-align: left;
+  // color: $primary-background-color;
+}
+
+.servicesArea {
+  // DISPLAY
+  display: flex;
+  gap: 28rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  // BOX MODEL
+  width: 100%;
+  margin-top: 48.3rem;
+  margin-bottom: 120rem;
+  // TYPOGRAPHY
+}

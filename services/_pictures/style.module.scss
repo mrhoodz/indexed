@@ -1,0 +1,18 @@
+@import "../../styles/colors";
+
+.article {
+  // background-color: pink;
+
+  // DISPLAY
+  position: relative;
+  display: flex;
+  gap: 52rem;
+
+  // BOX MODEL
+  padding-block: 148rem;
+  width: max-content;
+  margin-inline: auto;
+
+  // TYPOGRAPHY
+  // outline: 3px solid gold;
+}

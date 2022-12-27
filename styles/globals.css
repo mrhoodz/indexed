@@ -1,0 +1,60 @@
+/* article{
+  outline: lime 2px dashed;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  /* outline: 2px dashed purple; */
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+
+
+a{
+  color: whitesmoke;
+}
+
+a:link {
+  text-decoration: none;
+
+  /* font-family: Poppins Medium;
+  font-weight: normal; */
+  color: whitesmoke;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+html {
+  font-size: 1px;
+  background-color: pink;
+  scroll-behavior: smooth;
+}
+
+@media (width > 960px) {
+  html {
+    font-size: 0.58px;
+    background-color: red;
+  }
+}
+
+@media (width > 1280px) {
+  html {
+    font-size: 0.75px;
+    background-color: rebeccapurple;
+  }
+}
+
+@media (width > 1600px) {
+  html {
+    font-size: 1px;
+    background-color: orange;
+  }
+}

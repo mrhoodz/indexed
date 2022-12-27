@@ -1,0 +1,60 @@
+@import "../../../../styles/colors";
+
+.linksContainer {
+  // DISPLAY
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+
+  // BOX MODEL
+  padding-top: 24rem;
+
+  // TYPOGRAPHY
+
+
+
+}
+
+.a {
+  // DISPLAY
+
+  // BOX MODEL
+
+  // TYPOGRAPHY
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 22rem;
+  letter-spacing: 0.02em;
+  line-height: 34rem;
+  text-align: left;
+  color: #202020;
+
+
+  &:hover{
+    color: $secondary-color;
+  }
+
+}
+
+.active {
+  // DISPLAY
+
+  // BOX MODEL
+  margin-left: 5rem;
+
+  // TYPOGRAPHY
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 26rem;
+  letter-spacing: 0.03em;
+  line-height: 34rem;
+  text-align: left;
+  color:$secondary-color ;
+
+
+
+  &:hover{
+    color: $secondary-color;
+  }
+}

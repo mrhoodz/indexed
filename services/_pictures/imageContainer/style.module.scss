@@ -1,0 +1,15 @@
+@import "../../../styles/colors";
+
+.imageContainer {
+  // background-color: lime;
+  // DISPLAY
+  position: relative;
+  display: flex;
+  gap: 30rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // BOX MODEL
+  width: 1104rem;
+
+  // TYPOGRAPHY
+}

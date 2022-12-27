@@ -1,0 +1,25 @@
+@import "../../styles/colors";
+
+.article {
+  // DISPLAY
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // gap: 30rem;
+
+  // BOX MODEL
+  width: 1277rem;
+  margin-inline: auto;
+
+  // TYPOGRAPHY
+}
+
+.p {
+  // DISPLAY
+  position: relative;
+
+  // BOX MODEL
+  width: 1107rem;
+
+  // TYPOGRAPHY
+}

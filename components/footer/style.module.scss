@@ -1,0 +1,36 @@
+@import "../../styles/colors";
+
+.footer {
+  // DISPLAY
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // BOX MODEL
+  width: 100%;
+  height: 65.74rem;
+  padding-right: 15.36vw;
+  padding-left: 15.36vw;
+
+  // TYPOGRAPHY
+
+  & div {
+    // DISPLAY
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+
+    // BOX MODEL
+    width: 100%;
+
+    // TYPOGRAPHY
+
+    font-family: Poppins Medium;
+    font-weight: normal;
+    font-size: 19rem;
+    letter-spacing: 0.02em;
+    line-height: 22.8rem;
+    color: $primary-text-color;
+  }
+}
