@@ -9,7 +9,7 @@ import { GraphQLClient, gql } from "graphql-request";
 // import { GraphQLClient, gql } from "graphql-request";
 
 export default function Home({ data }: any) {
-  console.log(data.theNameAll);
+  // console.log(data.theNameAll);
   return (
     <>
       <Head>

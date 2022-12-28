@@ -1,14 +1,32 @@
 // import { Index } from './index';
 import Head from "next/head";
 import React from "react";
-import  Land  from "../../about-us/land";
-import  About  from "../../about-us/about";
-import Services  from "../../about-us/services";
-import Founded  from "../../about-us/founded";
-import  Vision  from "../../about-us/vision";
+import Land from "../../about-us/land";
+import About from "../../about-us/about";
+import Services from "../../about-us/services";
+import Founded from "../../about-us/founded";
+import Vision from "../../about-us/vision";
+import { GraphQLClient, gql } from "graphql-request";
 // import Services from "./services";
 
-export default function index() {
+export default function index({ data }: any) {
+  // console.log(data.theNameAll)
+
+  //funtion to reduce options to 3
+
+  const theName: any = (datad: any) => {
+    const x = data.theNameAll;
+    let list: any[] = [];
+    // let y = await x.map((item: any) => (  console.log(item.attributes.Name)  ))
+
+    let y = x.map((i: any, index: any) => {
+      index < 3 ? list.push(i.attributes) : null;
+    });
+
+    // console.log(y)
+    return list;
+  };
+
   return (
     <>
       <Head>
@@ -21,7 +39,7 @@ export default function index() {
       <Land />
 
       <About />
-      <Services />
+      <Services data={theName()} />
 
       <Founded />
       <Vision />
@@ -43,4 +61,55 @@ export default function index() {
       </article> */}
     </>
   );
+}
+
+export async function getServerSideProps(context: any) {
+  const endpoint = "https://sea-lion-app-ggqop.ondigitalocean.app/graphql";
+
+  const graphQLClient = new GraphQLClient(endpoint);
+
+  const variables = {
+    slug: "barricades",
+  };
+  const queryAll = gql`
+    query {
+      services {
+        data {
+          attributes {
+            Name
+            slug
+            Images {
+              __typename
+              ... on UploadFileRelationResponseCollection {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+
+            Task {
+              Task
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const dataAll = await graphQLClient.request(queryAll);
+
+  const attributesAll = dataAll.services.data;
+
+  const datad = {
+    theNameAll: attributesAll,
+  };
+
+  // console.log(datad);
+  return {
+    props: {
+      data: datad,
+    },
+  };
 }
