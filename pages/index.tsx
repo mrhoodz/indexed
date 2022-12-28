@@ -9,9 +9,8 @@ import { GraphQLClient, gql } from "graphql-request";
 // import { GraphQLClient, gql } from "graphql-request";
 
 export default function Home({ data }: any) {
-  // console.log("123")
+  console.log(data.theNameAll);
   return (
-
     <>
       <Head>
         <title>Home page</title>
@@ -26,7 +25,11 @@ export default function Home({ data }: any) {
 }
 
 export async function getServerSideProps(context: any) {
-  const graphQLClient = new GraphQLClient("http://127.0.0.1:1337/graphql");
+
+
+const endpoint = "https://sea-lion-app-ggqop.ondigitalocean.app/graphql";
+
+  const graphQLClient = new GraphQLClient(endpoint);
 
   const variables = {
     slug: "barricades",
@@ -58,7 +61,6 @@ export async function getServerSideProps(context: any) {
     }
   `;
 
-
   const dataAll = await graphQLClient.request(queryAll);
 
   const attributesAll = dataAll.services.data;
@@ -67,7 +69,7 @@ export async function getServerSideProps(context: any) {
     theNameAll: attributesAll,
   };
 
-  console.log(datad)
+  // console.log(datad);
   return {
     props: {
       data: datad,

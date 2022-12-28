@@ -26,11 +26,15 @@ export default async function handler(req, res) {
 
   const graphQLClient = new GraphQLClient("http://localhost:1337/graphql");
   const query = gql`
-    query  {
+    query {
       services {
         data {
           attributes {
             Name
+            slug
+            Task {
+              Task
+            }
           }
         }
       }
@@ -38,9 +42,37 @@ export default async function handler(req, res) {
   `;
 
   const data = await graphQLClient.request(query, variables);
+  // const attributes = data.services.data;
+
   const attributes = data.services.data;
 
-  res.status(200).json({ theName: attributes });
+console.log(attributes)
+
+  // console.log({data: Object.values(attributes)[0]});
+
+
+
+  // Object.values(attributes).map((item) => (
+
+
+  // const dummy = await axios.post("https://sea-lion-app-ggqop.ondigitalocean.app/api/services", {
+  //   data: Object.values(attributes),
+  // });
+
+
+  // attributes.map((item) => ( console.log( attributes[item]) ))
+
+
+  // ))
+
+  //post with axios
+  // const dummy = await axios.post("https://sea-lion-app-ggqop.ondigitalocean.app/api/services", {
+  //   data: attributes.map((item) => ( Object.values(attributes)[item])),
+  // });
+
+  // console.log(dummy);
+
+  res.status(200).json({ data: Object.values(attributes)[0] });
   // const dummy = await axios("https://dummyjson.com/products");
   // console.log(data);
 }

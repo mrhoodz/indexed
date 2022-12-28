@@ -78,7 +78,9 @@ export async function getServerSideProps(context: any) {
   //   slug: slugId,
   // });
 
-  const graphQLClient = new GraphQLClient("http://127.0.0.1:1337/graphql");
+  const graphQLClient = new GraphQLClient(
+    "https://sea-lion-app-ggqop.ondigitalocean.app/graphql"
+  );
 
   const variables = {
     slug: slugId,

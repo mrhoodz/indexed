@@ -11,7 +11,7 @@ export default function Prime({ data }: any) {
   const router = useRouter();
   const { slug } = router.query;
 
-  // console.log(data)
+  console.log(data)
   // console.log(data)
 
   return (

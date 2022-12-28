@@ -3,7 +3,7 @@ import style from "./style.module.scss";
 import  Tasks from "./tasks";
 
 export default function Land({ data }: any) {
-  console.log(data)
+  // console.log(data)
   interface taskProps {
     id: number;
     Task: string;
