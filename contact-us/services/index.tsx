@@ -3,31 +3,33 @@ import style from "./style.module.scss";
 import ServiceCards from "./servicecards";
 // import { fetcher } from "../../../lib/api";
 
-export default function Services({}) {
+export default function Services({ data }: any) {
   interface serviceCardsProps {
     id: number;
     p: string;
     image: string;
   }
 
-  const serviceCards: serviceCardsProps[] = [
-    {
-      id: 1,
-      p: "Mechanical and Civil Construction",
-      image: "pexels-anamul-rezwan-1216589 (Large).jpg",
-    },
-    {
-      id: 2,
-      p: "Water Treatment",
-      image: "pexels-yury-kim-585418 (Large).jpg",
-    },
-    {
-      id: 3,
-      p: "Supply, Services, Repair and Installation of Workshop Machines",
-      // p: " Workshop Machine Supplyand maintanance",
-      image: "pexels-pixabay-7931 (Large).jpg",
-    },
-  ];
+  // const serviceCards: serviceCardsProps[] = [
+  //   {
+  //     id: 1,
+  //     p: "Mechanical and Civil Construction",
+  //     image: "pexels-anamul-rezwan-1216589 (Large).jpg",
+  //   },
+  //   {
+  //     id: 2,
+  //     p: "Water Treatment",
+  //     image: "pexels-yury-kim-585418 (Large).jpg",
+  //   },
+  //   {
+  //     id: 3,
+  //     p: "Supply, Services, Repair and Installation of Workshop Machines",
+  //     // p: " Workshop Machine Supplyand maintanance",
+  //     image: "pexels-pixabay-7931 (Large).jpg",
+  //   },
+  // ];
+
+  const serviceCards = data;
 
   return (
     <article className={style.article} id="our-services">
@@ -50,4 +52,3 @@ export default function Services({}) {
     </article>
   );
 }
-
