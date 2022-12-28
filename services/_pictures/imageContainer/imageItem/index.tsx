@@ -8,19 +8,19 @@ export default function ImageItem({ data }: any) {
     src: string;
   }
 
-// console.log(data)
+  // console.log(data)
 
   return (
     <>
       {data.map((item: any, index: any) => (
-          <Image
+        <Image
           height={1080}
           width={1920}
-            key={index}
-            className={style.img}
-            src={`https://sea-lion-app-ggqop.ondigitalocean.app${item.attributes.url}`}
-            alt="image goes here"
-          />
+          key={index}
+          className={style.img}
+          src={`https://sea-lion-app-ggqop.ondigitalocean.app${item.attributes.url}`}
+          alt="image goes here"
+        />
       ))}
     </>
   );
