@@ -1,11 +1,11 @@
 // import { Index } from './index';
 import Head from "next/head";
 import React from "react";
-import Land from "../../../contact-us/land-careers";
-import About from "../../../contact-us/about";
-import Services from "../../../contact-us/services";
-import Founded from "../../../contact-us/founded";
-import Vision from "../../../contact-us/vision";
+import Land from "../../contact-us/land-careers";
+import About from "../../contact-us/about";
+import Services from "../../contact-us/services";
+import Founded from "../../contact-us/founded";
+import Vision from "../../contact-us/vision";
 // import Services from "./services";
 
 export default function index() {
