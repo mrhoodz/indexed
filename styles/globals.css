@@ -33,7 +33,7 @@ a:visited {
 }
 
 html {
-  font-size: 1px;
+  font-size: 0.38px;
   background-color: pink;
   scroll-behavior: smooth;
 }

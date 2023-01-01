@@ -2,13 +2,15 @@
 
 .values {
   position: relative;
-  width: 1277.25rem;
-  height: 94.21rem;
+  width: 90%;
+  // height: 94.21rem;
   margin-top: 60rem;
 
   // background: lime;
+  gap: 80rem;
   display: flex;
-  justify-content: space-between;
+  overflow: hidden;
+  // justify-content: space-between;
 }
 
 .span {

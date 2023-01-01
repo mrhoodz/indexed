@@ -1,5 +1,98 @@
 @import "../../styles/colors";
+@import "../../styles/media query";
 
+.about {
+  // DISPLAY
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  // BOX MODEL
+  height: 1123rem;
+  width: 100%;
+  margin-top: 127.3rem;
+  margin-right: auto;
+  margin-left: auto;
+padding-inline: 60rem;
+
+  // TYPOGRAPHY
+}
+
+.h2 {
+  // DISPLAY
+
+  // BOX MODEL
+  width: 873rem;
+  height: 230rem;
+
+  // TYPOGRAPHY
+  // font-family: Poppins;
+  // font-weight: bold;
+  // font-size: 53rem;
+  // line-height: 63.6rem;
+  // color: $primary-color;
+}
+
+.p {
+  // DISPLAY
+
+  // BOX MODEL
+  width: 100%;
+  height: 220rem;
+
+  // TYPOGRAPHY
+  // font-family: Poppins;
+  // font-weight: normal;
+  // font-size: 25rem;
+  // letter-spacing: 0.02em;
+  // line-height: 34rem;
+  // text-align: left;
+  // color: $primary-background-color;
+}
+
+.values {
+  // DISPLAY
+  position: relative;
+  display: flex;
+
+  // BOX MODEL
+  width: 100%;
+  height: 94.21rem;
+
+  // TYPOGRAPHY
+}
+
+.hero {
+  // DISPLAY
+  position: relative;
+
+  // BOX MODEL
+  width: 100%;
+  height: 456.41rem;
+  // background: limegreen;
+  margin-top: 46.3rem;
+  overflow: hidden;
+
+  // TYPOGRAPHY
+}
+
+.heroimg {
+  // DISPLAY
+  position: absolute;
+
+  // BOX MODEL
+  margin-top: -62.3rem;
+  width: 100%;
+  height: auto;
+
+  // TYPOGRAPHY
+}
+
+
+
+
+@media (width > $phone) {
+  
 .about {
   // DISPLAY
   position: relative;
@@ -84,4 +177,6 @@
   height: auto;
 
   // TYPOGRAPHY
+}
+  
 }
