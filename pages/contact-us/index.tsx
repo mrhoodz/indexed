@@ -1,24 +1,22 @@
 // import { Index } from './index';
 import Head from "next/head";
 import React from "react";
-import  Land  from "../../contact-us/land";
-import  About  from "../../contact-us/about";
-import Services  from "../../contact-us/services";
-import Founded  from "../../contact-us/founded";
-import  Vision  from "../../contact-us/vision";
+import Land from "../../contact-us/land";
+import About from "../../contact-us/about";
+import Services from "../../contact-us/services";
+import Founded from "../../contact-us/founded";
+import Vision from "../../contact-us/vision";
 import { GraphQLClient, gql } from "graphql-request";
 // import Services from "./services";
 
-export default function index({data}: any) {
-
-
+export default function index({ data }: any) {
   const theName: any = (datad: any) => {
     const x = data.theNameAll;
     let list: any[] = [];
     // let y = await x.map((item: any) => (  console.log(item.attributes.Name)  ))
 
     let y = x.map((i: any, index: any) => {
-      index < 3 ? list.push(i.attributes) : null;
+      index < 7 ? list.push(i.attributes) : null;
     });
 
     // console.log(y)
@@ -37,7 +35,7 @@ export default function index({data}: any) {
       <Land />
 
       <About />
-      <Services  data = {theName()}/>
+      <Services data={theName()} />
 
       <Founded />
       <Vision />
