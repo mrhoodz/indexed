@@ -32,7 +32,7 @@ export default function Header() {
 
     {
       Link: "CONTACT US",
-      href: "/contact-us",
+      href: "/",
     },
   ];
 
