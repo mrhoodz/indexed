@@ -5,6 +5,7 @@ import style from "./style.module.scss";
 import logohead from "../../public/resized/svg/logo png.svg";
 import logotext from "../../public/resized/svg/logo text.svg";
 import Navlinks from "./navlink";
+import Link from "next/link";
 
 export default function Header() {
   interface navProps {
@@ -37,10 +38,10 @@ export default function Header() {
 
   return (
     <nav className={style.header}>
-      <span className={style.logoWrapper}>
+      <Link href="\" className={style.logoWrapper}>
         <Image className={style.logohead} src={logohead} alt="this is alt text" />
         <Image className={style.logotext} src={logotext} alt="this is alt text" />
-      </span>
+      </Link>
 
       <Navlinks links={navLinks} />
 
