@@ -39,7 +39,7 @@ export default function About({}) {
         <Valuecards data={data} />
       </div>
 
-      <div className="hero" id="img">
+      <div className={style.hero} id="img">
         <Image
           height={1080}
           width={1920}

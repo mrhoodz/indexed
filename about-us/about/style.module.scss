@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/media query";
 
 .article {
   // DISPLAY
@@ -8,7 +9,8 @@
   // gap: 30rem;
 
   // BOX MODEL
-  width: 1277rem;
+  width: 100%;
+  padding-inline: 60rem;
   margin-inline: auto;
 
   // TYPOGRAPHY
@@ -19,7 +21,90 @@
   position: relative;
 
   // BOX MODEL
-  width: 1107rem;
+  width: 100%;
 
   // TYPOGRAPHY
+}
+
+
+.hero {
+  // DISPLAY
+  position: relative;
+
+  // BOX MODEL
+  width: 100%;
+  height: 456.41rem;
+  // background: limegreen;
+  margin-top: 46.3rem;
+  overflow: hidden;
+
+  // TYPOGRAPHY
+}
+
+.heroimg {
+  // DISPLAY
+  position: absolute;
+
+  // BOX MODEL
+  margin-top: -62.3rem;
+  width: 100%;
+  height: auto;
+
+  // TYPOGRAPHY
+}
+
+
+@media (width > $phone) {
+
+
+  .article {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // gap: 30rem;
+  
+    // BOX MODEL
+    width: 1277rem;
+    margin-inline: auto;
+  
+    // TYPOGRAPHY
+  }
+  
+  .p {
+    // DISPLAY
+    position: relative;
+  
+    // BOX MODEL
+    width: 1107rem;
+  
+    // TYPOGRAPHY
+  }
+
+  .hero {
+    // DISPLAY
+    position: relative;
+  
+    // BOX MODEL
+    width: 100%;
+    height: 456.41rem;
+    // background: limegreen;
+    margin-top: 46.3rem;
+    overflow: hidden;
+  
+    // TYPOGRAPHY
+  }
+  
+  .heroimg {
+    // DISPLAY
+    position: absolute;
+  
+    // BOX MODEL
+    margin-top: -62.3rem;
+    width: 100%;
+    height: auto;
+  
+    // TYPOGRAPHY
+  }
+  
 }

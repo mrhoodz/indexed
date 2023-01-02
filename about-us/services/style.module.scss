@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/media query";
 
 .article {
   // DISPLAY
@@ -8,8 +9,9 @@
 
   // BOX MODEL
   padding-top: 98rem;
+  padding-inline: 60rem;
   margin-inline: auto;
-  width: 1437rem;
+  width: 100%;
 
   // TYPOGRAPHY
 }
@@ -40,4 +42,53 @@
 // We have a passion for delivering value to our clients through
   // TYPOGRAPHY
   
+}
+
+
+
+@media (width > $phone) {
+
+  .article {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+    // BOX MODEL
+    padding-top: 98rem;
+    margin-inline: auto;
+    width: 1437rem;
+  
+    // TYPOGRAPHY
+  }
+  
+  
+  .servicesArea {
+    // DISPLAY
+    display: flex;
+    gap: 28rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    // BOX MODEL
+    width: 100%;
+    margin-top: 48.3rem;
+  
+    // TYPOGRAPHY
+  }
+  .p{
+    
+    
+    // DISPLAY
+    
+    
+    
+    // BOX MODEL
+    width: 53ch;
+  // We have a passion for delivering value to our clients through
+    // TYPOGRAPHY
+    
+  }
+  
+
 }
