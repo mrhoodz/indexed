@@ -38,8 +38,8 @@ export default function Header() {
   return (
     <nav className={style.header}>
       <span className={style.logoWrapper}>
-        <Image src={logohead} alt="this is alt text" />
-        <Image src={logotext} alt="this is alt text" />
+        <Image className={style.logohead} src={logohead} alt="this is alt text" />
+        <Image className={style.logotext} src={logotext} alt="this is alt text" />
       </span>
 
       <Navlinks links={navLinks} />

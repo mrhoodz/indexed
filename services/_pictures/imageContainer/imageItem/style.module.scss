@@ -1,43 +1,26 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/media query";
 
+.img {
+  // DISPLAY
+  position: relative;
 
+  // BOX MODEL
+  width: 465.23rem;
+  height: 303.31rem;
 
-.img{
-    
-    // DISPLAY
-    position: relative;
-    
-    
-    // BOX MODEL
-    width: 435.23rem;
-    height: 233.31rem;
-    
-    
-    
-    // TYPOGRAPHY
-    
+  // TYPOGRAPHY
 }
 
-
 @media (width > $phone) {
+  .img {
+    // DISPLAY
+    position: relative;
 
-    .img{
-    
-        // DISPLAY
-        position: relative;
-        
-        
-        // BOX MODEL
-        width: 535.23rem;
-        height: 333.31rem;
-            
-        
-        
-        // TYPOGRAPHY
-        
-    }
-    
+    // BOX MODEL
+    width: 535.23rem;
+    height: 333.31rem;
 
-
+    // TYPOGRAPHY
+  }
 }

@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/media query";
 
 .header {
   // DISPLAY
@@ -53,4 +54,81 @@
   width: 336rem;
 
   // TYPOGRAPHY
+
+  .logohead {
+    position: relative;
+    height: 60rem;
+  }
+
+  .logotext {
+    position: relative;
+    height: 30rem;
+  }
+}
+
+@media (width > $phone) {
+  .header {
+    // DISPLAY
+    position: relative;
+    // background-color: $primary-background-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+
+    // BOX MODEL
+    padding-right: 8.07vw;
+    padding-left: 8.07vw;
+    //   width: clamp(1611rem, vw, 1920rem);
+    // min-width: 1611rem;
+    width: 100%;
+    // max-width: 1920rem;
+    height: 150rem;
+
+    // TYPOGRAPHY
+  }
+
+  .button {
+    // DISPLAY
+    position: relative;
+    background-color: $primary-text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // BOX MODEL
+    height: 52rem;
+    width: 170rem;
+    border-radius: 999rem;
+
+    // TYPOGRAPHY
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18rem;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .logoWrapper {
+    // DISPLAY
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24rem;
+
+    // BOX MODEL
+    width: 336rem;
+
+    // TYPOGRAPHY
+  }
+
+  .logohead {
+    position: relative;
+    height: auto;
+  }
+
+  .logotext {
+    position: relative;
+    height: auto;
+  }
 }
