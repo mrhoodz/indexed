@@ -11,9 +11,6 @@
   padding-top: 24rem;
 
   // TYPOGRAPHY
-
-
-
 }
 
 .a {
@@ -23,18 +20,16 @@
 
   // TYPOGRAPHY
   font-family: Poppins;
-  font-weight: 500;
+  font-weight: bolder;
   font-size: 22rem;
   letter-spacing: 0.02em;
   line-height: 34rem;
   text-align: left;
   color: #202020;
 
-
-  &:hover{
+  &:hover {
     color: $secondary-color;
   }
-
 }
 
 .active {
@@ -50,11 +45,9 @@
   letter-spacing: 0.03em;
   line-height: 34rem;
   text-align: left;
-  color:$secondary-color ;
+  color: $secondary-color;
 
-
-
-  &:hover{
+  &:hover {
     color: $secondary-color;
   }
 }
