@@ -28,7 +28,7 @@ export default function Founded({}) {
         skilled professionals who are passionate about their work and dedicated
         to delivering top-quality results.
       </p>
-      <div className={`hero-bigger`} id="img">
+      <div className={`hero-bigger ${style.bigger}`} id="img">
         <Image
         width={1920}
         height={1080}

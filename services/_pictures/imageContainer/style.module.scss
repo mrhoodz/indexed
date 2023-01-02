@@ -1,4 +1,5 @@
 @import "../../../styles/colors";
+@import "../../../styles/media query";
 
 .imageContainer {
   // background-color: lime;
@@ -9,7 +10,28 @@
   flex-wrap: wrap;
   justify-content: space-between;
   // BOX MODEL
-  width: 1104rem;
+  width: 100%;
+  padding-inline: 0rem;
 
   // TYPOGRAPHY
+}
+
+
+@media (width > $phone) {
+
+  .imageContainer {
+    // background-color: lime;
+    // DISPLAY
+    position: relative;
+    display: flex;
+    gap: 30rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // BOX MODEL
+    width: 100%;
+    padding-inline: 50rem;
+  
+    // TYPOGRAPHY
+  }
+
 }

@@ -1,14 +1,17 @@
 @import "../../styles/colors";
+@import "../../styles/media query";
 
 .article {
   // DISPLAY
   position: relative;
   display: flex;
-  gap: 104rem;
+  justify-content: center;
+  gap: 40rem;
   flex-wrap: wrap;
 
-
   // BOX MODEL
+  padding-inline: 60rem;
+
   padding-top: 114.5rem;
   max-width: 1437rem;
   margin-inline: auto;
@@ -57,4 +60,65 @@
   height: 442.83rem;
 
   // TYPOGRAPHY
+}
+
+@media (width > $phone) {
+  .article {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    gap: 104rem;
+    flex-wrap: wrap;
+
+    // BOX MODEL
+    padding-inline: 0rem;
+    padding-top: 114.5rem;
+    max-width: 1437rem;
+    margin-inline: auto;
+
+    // TYPOGRAPHY
+  }
+
+  .aside {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    // BOX MODEL
+    width: 664rem;
+    //   height: 732.23rem;
+
+    // TYPOGRAPHY
+
+    &:nth-child(2) {
+      margin-top: 100rem;
+    }
+  }
+
+  .img {
+    // DISPLAY
+    position: relative;
+    overflow: hidden;
+
+    // BOX MODEL
+    margin-top: 58rem;
+
+    width: 100%;
+    height: 406.45rem;
+
+    // TYPOGRAPHY
+  }
+
+  .heroimg {
+    // DISPLAY
+    position: absolute;
+
+    // BOX MODEL
+    top: -14.3rem;
+    width: 100%;
+    height: 442.83rem;
+
+    // TYPOGRAPHY
+  }
 }

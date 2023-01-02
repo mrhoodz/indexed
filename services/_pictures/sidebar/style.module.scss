@@ -1,9 +1,10 @@
 @import "../../../styles/colors";
+@import "../../../styles/media query";
 
 .sidebar {
   // DISPLAY
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
 
   // BOX MODEL
@@ -37,5 +38,54 @@
   -webkit-text-stroke-width: 0.6rem;
   -webkit-text-stroke-color: $primary-color;
   opacity: 0.78;
+
+}
+
+
+
+
+@media (width > $phone) {
+
+
+  .sidebar {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+    // BOX MODEL
+    width: 490rem ;
+  
+    // TYPOGRAPHY
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 30rem;
+    line-height: 63.6rem;
+    text-align: left;
+    color: $primary-color;
+    -webkit-text-fill-color: $primary-color; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.6rem;
+    -webkit-text-stroke-color: $primary-color;
+    opacity: 0.78;
+  }
+  
+  
+  .h4{
+  
+  
+    // TYPOGRAPHY
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 30rem;
+    line-height: 63.6rem;
+    text-align: left;
+    color: $primary-color;
+    -webkit-text-fill-color: $primary-color; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.6rem;
+    -webkit-text-stroke-color: $primary-color;
+    opacity: 0.78;
+  
+  }
+
 
 }

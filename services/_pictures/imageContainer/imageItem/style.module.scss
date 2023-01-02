@@ -1,4 +1,5 @@
 @import "../../../../styles/colors";
+@import "../../../../styles/media query";
 
 
 
@@ -9,11 +10,34 @@
     
     
     // BOX MODEL
-    width: 535.23rem;
-    height: 333.31rem;
-        
+    width: 435.23rem;
+    height: 233.31rem;
+    
     
     
     // TYPOGRAPHY
     
+}
+
+
+@media (width > $phone) {
+
+    .img{
+    
+        // DISPLAY
+        position: relative;
+        
+        
+        // BOX MODEL
+        width: 535.23rem;
+        height: 333.31rem;
+            
+        
+        
+        // TYPOGRAPHY
+        
+    }
+    
+
+
 }

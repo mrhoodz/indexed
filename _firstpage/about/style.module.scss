@@ -145,10 +145,13 @@ padding-inline: 60rem;
   // DISPLAY
   position: relative;
   display: flex;
+  background-color: aquamarine;
 
   // BOX MODEL
   width: 1277.25rem;
   height: 94.21rem;
+
+  justify-content: space-between;
 
   // TYPOGRAPHY
 }
