@@ -6,6 +6,7 @@
   position: relative;
   display: none;
   flex-direction: column;
+  // background-color: aqua;
 
   // BOX MODEL
   width: 440rem ;
@@ -29,14 +30,14 @@
 
   // TYPOGRAPHY
   font-family: Poppins;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 30rem;
   line-height: 63.6rem;
   text-align: left;
   color: $primary-color;
-  -webkit-text-fill-color: $primary-color; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: $secondary-color; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 0.6rem;
-  -webkit-text-stroke-color: $primary-color;
+  -webkit-text-stroke-color: $secondary-color;
   opacity: 0.78;
 
 }
@@ -80,10 +81,10 @@
     line-height: 63.6rem;
     text-align: left;
     color: $primary-color;
-    -webkit-text-fill-color: $primary-color; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: $secondary-color; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 0.6rem;
-    -webkit-text-stroke-color: $primary-color;
-    opacity: 0.78;
+    -webkit-text-stroke-color: $secondary-color;
+      opacity: 0.78;
   
   }
 

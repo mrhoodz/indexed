@@ -1,7 +1,7 @@
 @import "./colors";
 
 body {
-  background-color: whitesmoke;
+  background-color: silver;
 }
 
 h1 {
@@ -23,7 +23,7 @@ article h2 {
   font-weight: bold;
   font-size: 53rem;
   line-height: 63.6rem;
-  color: $primary-color;
+  color: $primary-background-color;
 }
 
 article p {
@@ -52,7 +52,7 @@ article .p-small {
 }
 
 .buttoned {
-  background: $secondary-color;
+  background-color: $secondary-color;
   display: flex;
   justify-content: center;
   align-items: center;

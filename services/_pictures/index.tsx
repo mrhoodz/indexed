@@ -33,10 +33,16 @@ export default function Pictures({data , dataAll}: any) {
 // console.log(sideLinkProps)
 
   return (
+
+<>
+
     <article className={style.article} id="pictures">
       <ImageContainer data={data} />
 
       <Sidebar data={data} dataAll={dataAll} />
     </article>
+
+    </>
+
   );
 }

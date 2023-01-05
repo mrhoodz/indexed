@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   // BOX MODEL
-  width: 100%;
+  width: auto;
   padding-inline: 0rem;
 
   // TYPOGRAPHY
@@ -24,12 +24,13 @@
     // DISPLAY
     position: relative;
     display: flex;
+    flex-direction: row;
     gap: 30rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    // flex-wrap: nowrap;
+    justify-content:space-between;
     // BOX MODEL
-    width: 100%;
-    padding-inline: 50rem;
+    width: 1270rem;
+    padding-inline: 0rem;
   
     // TYPOGRAPHY
   }

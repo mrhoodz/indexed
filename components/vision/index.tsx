@@ -6,8 +6,8 @@ export default function Vision({}) {
   return (
     <article className={style.vision} id="vision">
       <Image
-        height={1080}
-        width={1920}
+      fill
+
         className={style.img}
         src="/resized/pexels-pixabay-259984 (Large).jpg"
         alt="vision image goes here"

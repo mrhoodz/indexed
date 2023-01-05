@@ -38,9 +38,17 @@ export default function Header() {
 
   return (
     <nav className={style.header}>
-      <Link href="\" className={style.logoWrapper}>
-        <Image className={style.logohead} src={logohead} alt="this is alt text" />
-        <Image className={style.logotext} src={logotext} alt="this is alt text" />
+      <Link href="/" className={style.logoWrapper}>
+        <Image
+          className={style.logohead}
+          src={logohead}
+          alt="this is alt text"
+        />
+        <Image
+          className={style.logotext}
+          src={logotext}
+          alt="this is alt text"
+        />
       </Link>
 
       <Navlinks links={navLinks} />
