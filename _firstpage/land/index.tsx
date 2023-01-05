@@ -23,7 +23,7 @@ export default function Land({}) {
 
         <div className={style.contactinfo}>
           <span>Info@5starengineering.co.za</span>
-          <span>1-800-858-9999</span>
+          <span>053 753 1404</span>
         </div>
       </div>
     </article>
