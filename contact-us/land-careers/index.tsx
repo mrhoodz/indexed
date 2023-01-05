@@ -8,8 +8,9 @@ export default function Land({}) {
 
       <div className={style.content}>
         <h1>
-          We are always on the lookout for talented, passionate professionals to
-          join our team
+          Meerkat Plaza no 1, <br />
+          28 Asbes Street, <br />
+          Kathu{" "}
         </h1>
 
         <h3 className={style.h3}>
