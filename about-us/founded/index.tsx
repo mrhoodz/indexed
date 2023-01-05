@@ -30,10 +30,10 @@ export default function Founded({}) {
       </p>
       <div className={`hero-bigger ${style.bigger}`} id="img">
         <Image
-        width={1920}
-        height={1080}
+          width={1920}
+          height={1080}
           className={"heroimg"}
-          src="/resized/pexels-kateryna-babaieva-2760241 (Large).jpg"
+          src="/resized/pexels-yury-kim-585418 (Large).jpg"
           alt="hero image"
         />
       </div>{" "}
