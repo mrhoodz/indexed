@@ -20,7 +20,7 @@ export default function Vision({}) {
           width={1920}
           height={1080}
             className={` ${style.heroimg}`}
-            src="/resized/pexels-kateryna-babaieva-2760241 (Large).jpg"
+            src="/resized/pexels-anamul-rezwan-1145434 (Large).jpg"
             alt="hero image"
           />
         </div>
