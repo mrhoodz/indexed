@@ -20,8 +20,8 @@ export default function Vision({}) {
         <textarea id="email" placeholder="Your Message"></textarea>
 
         <div>
-          <a className={style.button}>SUBMIT NOW</a>
-          <button className={` ${style.secondBTN}`}>CAREERS</button>
+          <button className={style.button}>SUBMIT NOW</button>
+          <a className={` ${style.secondBTN}`}>CAREERS</a>
         </div>
       </form>
 
