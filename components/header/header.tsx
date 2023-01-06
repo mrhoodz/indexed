@@ -32,7 +32,7 @@ export default function Header() {
 
     {
       Link: "CAREERS",
-      href: "/contact-us/carrers",
+      href: "/contact-us/careers",
     },
   ];
 
