@@ -32,7 +32,7 @@ export default function Header() {
 
     {
       Link: "CONTACT US",
-      href: "/",
+      href: "/contact-us",
     },
   ];
 
@@ -53,9 +53,9 @@ export default function Header() {
 
       <Navlinks links={navLinks} />
 
-      <a className={style.button} href="">
+      <Link className={style.button} href="/contact-us">
         GET A QUOTES
-      </a>
+      </Link>
     </nav>
   );
 }

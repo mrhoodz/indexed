@@ -1,30 +1,29 @@
 import React from "react";
 import style from "./style.module.scss";
 import Image from "next/image";
+// import "../styles/colors.scss";
 
 export default function Vision({}) {
   return (
     <article className={style.article} id="mission-vision">
-      <aside className={style.aside} id="mission-statement">
-        <h2>OUR MISSION</h2>
+      <form className={style.form} id="mission-statement">
+        <h2>CONTACT US</h2>
+        <label>YOUR NAME</label>
 
-        <p className="p-small">
-          Our mission is to deliver personalized customer attention and
-          efficiency while providing top-quality engineering services. We are
-          committed to excellence in everything we do and strive to exceed our
-          customers&apos;  expectations.
-        </p>
+        <input type="email" name="email.com" id="email" placeholder="Name" />
 
-        <div className={`hero ${style.img}`} id="img">
-          <Image
-          width={1920}
-          height={1080}
-            className={` ${style.heroimg}`}
-            src="/resized/pexels-kateryna-babaieva-2760241 (Large).jpg"
-            alt="hero image"
-          />
+        <label>YOUR EMAIL</label>
+
+        <input type="email" name="email.com" id="email" placeholder="Email" />
+        <label>ASK US ANYTHING</label>
+
+        <textarea id="email" placeholder="Your Message"></textarea>
+
+        <div>
+          <a className={style.button}>SUBMIT NOW</a>
+          <button className={` ${style.secondBTN}`}>CAREERS</button>
         </div>
-      </aside>
+      </form>
 
       <aside className={style.aside} id="mission-statement">
         <h2>OUR VISION</h2>
@@ -39,9 +38,8 @@ export default function Vision({}) {
 
         <div className={`hero ${style.img}`} id="img">
           <Image
-                    width={1920}
-                    height={1080}
-          
+            width={1920}
+            height={1080}
             className={` ${style.heroimg}`}
             src="/resized/pexels-pixabay-259984 (Large).jpg"
             alt="hero image"

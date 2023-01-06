@@ -7,13 +7,20 @@ export default function Land({}) {
       <div className={style.overlay}>ve</div>
 
       <div className={style.content}>
-        <h1>
-          We are committed to providing our customers with the very best
-          engineering services{" "}
+      <h1>
+          Meerkat Plaza no 1, <br />
+          28 Asbes Street, <br />
+          Kathu{" "}
         </h1>
 
         <h3 className={style.h3}>
-          Our goal is to be a trusted partner for all of your engineering needs{" "}
+         sales@5staregineering.co.za
+        </h3>
+        <h3 className={style.h3}>
+        info@5staregineering.co.za
+        </h3>
+        <h3 className={style.h3}>
+        053 753 1404
         </h3>
       </div>
     </article>

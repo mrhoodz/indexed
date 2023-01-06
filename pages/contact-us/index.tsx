@@ -1,7 +1,7 @@
 // import { Index } from './index';
 import Head from "next/head";
 import React from "react";
-import Land from "../../contact-us/land-careers";
+import Land from "../../contact-us/land";
 import About from "../../contact-us/about";
 import Services from "../../contact-us/services";
 import Founded from "../../contact-us/founded";
@@ -35,9 +35,9 @@ export default function index({ data }: any) {
       <Land />
 
       {/* <About /> */}
-      <Services data={theName()} />
+      {/* <Services data={theName()} />
 
-      <Founded />
+      <Founded /> */}
       <Vision />
       {/* <article id="OurTeam">
         <p>
