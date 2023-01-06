@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./style.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Founded({}) {
   return (
@@ -8,9 +9,9 @@ export default function Founded({}) {
       {/* assd */}
       <span className="header">
         <h2>FOUNDED IN PASSION</h2>
-        <a className="buttoned" href="">
+        <Link className="buttoned" href="/#services">
           OUR SERVICES
-        </a>
+        </Link>
       </span>
       {/* <p className={`${style.p}  p-small`}>
         Established in 2019 by Mr Lot Mucavele who has over 10 years experience

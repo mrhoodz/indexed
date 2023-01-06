@@ -1,6 +1,7 @@
 import ServiceCards from "./servicecards";
 import React from "react";
 import style from "./style.module.scss";
+import Link from "next/link";
 
 export default function Services({ data }: any) {
   interface serviceCardsProps {
@@ -74,9 +75,9 @@ export default function Services({ data }: any) {
     <article className={style.ourservices} id="our-services">
       <div className={style.infoWrapper}>
         <h2>OUR SERVICES</h2>
-        <a className="buttoned" href="">
+        <Link className="buttoned" href="/contact-us">
           CONTACT US
-        </a>
+        </Link>
       </div>
 
       <p className={`${style.pcontent} p-small`}>

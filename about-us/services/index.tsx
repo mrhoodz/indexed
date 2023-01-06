@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./style.module.scss";
 import ServiceCards from "./servicecards";
+import Link from "next/link";
 // import { fetcher } from "../../../lib/api";
 
 export default function Services({ data }: any) {
@@ -35,9 +36,9 @@ export default function Services({ data }: any) {
     <article className={style.article} id="our-services">
       <span className="header">
         <h2>OUR SERVICES</h2>
-        <a className="buttoned" href="">
+        <Link className="buttoned" href="contact-us">
           CONTACT US
-        </a>
+        </Link>
       </span>
 
       <p className={`${style.p} p-small`}>
