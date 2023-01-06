@@ -53,7 +53,7 @@ export default function Header() {
 
       <Navlinks links={navLinks} />
 
-      <Link className={style.button} href="/contact-us">
+      <Link className={style.button} id="get" href="/contact-us">
         GET A QUOTES
       </Link>
     </nav>
