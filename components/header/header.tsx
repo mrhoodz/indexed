@@ -31,8 +31,8 @@ export default function Header() {
     },
 
     {
-      Link: "CONTACT US",
-      href: "/contact-us",
+      Link: "CAREERS",
+      href: "/contact-us/carrers",
     },
   ];
 
@@ -54,7 +54,7 @@ export default function Header() {
       <Navlinks links={navLinks} />
 
       <Link className={style.button} id="get" href="/contact-us">
-        GET A QUOTES
+        GET QUOTES
       </Link>
     </nav>
   );

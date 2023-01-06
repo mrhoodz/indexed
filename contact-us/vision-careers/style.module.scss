@@ -1,0 +1,299 @@
+@import "../../styles/_colors";
+@import "../../styles/media query";
+// @import url("../../styles/_colors.scss");
+
+.article {
+  // DISPLAY
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40rem;
+  flex-wrap: wrap;
+
+  // BOX MODEL
+  padding-inline: 60rem;
+
+  padding-top: 114.5rem;
+  max-width: 1437rem;
+  margin-inline: auto;
+
+  // TYPOGRAPHY
+}
+
+.aside {
+  // DISPLAY
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  // BOX MODEL
+  width: 664rem;
+  //   height: 732.23rem;
+
+  // TYPOGRAPHY
+
+  &:nth-child(2) {
+    margin-top: 100rem;
+  }
+
+
+  .img {
+    // DISPLAY
+    position: relative;
+    overflow: hidden;
+  
+    // BOX MODEL
+    margin-top: 58rem;
+  
+    width: 100%;
+    height: 406.45rem;
+  
+    // TYPOGRAPHY
+  }
+  
+  .heroimg {
+    // DISPLAY
+    position: absolute;
+  
+    // BOX MODEL
+    top: -14.3rem;
+    width: 100%;
+    height: 442.83rem;
+  
+    // TYPOGRAPHY
+  }  
+}
+
+
+.form {
+  // DISPLAY
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  // BOX MODEL
+  width: 635rem;
+  //   height: 732.23rem;
+
+  // TYPOGRAPHY
+  font-family: Poppins;
+  font-weight: 600;
+font-size: 24rem;
+
+
+& h2{
+  margin-bottom: 40rem;
+}
+
+
+
+& label{
+  position: relative;
+ 
+  
+
+}
+
+
+& input{
+   margin-top: 8rem;
+  margin-bottom: 18rem;
+  width: 100%;
+  height: 53rem;
+  font-size: 20rem;
+  padding-left: 10rem;
+}
+
+& textarea{
+  margin-top: 8rem;
+  margin-bottom: 43rem;
+  width: 100%;
+  height: 262rem;
+  font-size: 20rem;
+  padding-top: 5rem;
+  padding-left: 10rem;
+
+
+}
+
+& div{
+  display: flex;
+  gap: 26rem;
+
+
+  .secondBTN{
+    margin-top: 8rem;
+    margin-bottom: 43rem;
+  padding-block: 17.5rem;
+  padding-inline: 40rem;
+
+    background-color: transparent;
+    color: $secondary-color;
+    outline: 2rem solid $secondary-color;
+    border: none;
+
+    font-size: 18rem;
+    font-weight: 600;
+    border-radius: 999rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  
+
+&:hover{
+  color: silver;
+  background-color: $primary-color;
+  outline: 2rem solid transparent;
+}
+
+
+  }
+
+
+}
+
+& div .button{
+  margin-top: 8rem;
+  margin-bottom: 43rem;
+padding-block: 17.5rem;
+padding-inline: 40rem;
+  background-color: $secondary-color;
+  border: none;
+  color: white;
+  font-size: 18rem;
+  font-weight: 600;
+  outline: 2rem solid transparent;
+  border-radius: 999rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover{
+    background-color: $primary-color;
+  }
+
+
+}
+
+
+}
+
+@media (width > $phone) {
+  .article {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    gap: 104rem;
+    flex-wrap: wrap;
+
+    // BOX MODEL
+    padding-inline: 0rem;
+    padding-top: 114.5rem;
+    max-width: 1437rem;
+    margin-inline: auto;
+
+    // TYPOGRAPHY
+  }
+
+  .aside {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    // BOX MODEL
+    width: 664rem;
+    //   height: 732.23rem;
+
+    // TYPOGRAPHY
+
+    &:nth-child(2) {
+      margin-top: 100rem;
+    }
+  }
+
+  .img {
+    // DISPLAY
+    position: relative;
+    overflow: hidden;
+
+    // BOX MODEL
+    margin-top: 58rem;
+
+    width: 100%;
+    height: 406.45rem;
+
+    // TYPOGRAPHY
+  }
+
+  .heroimg {
+    // DISPLAY
+    position: absolute;
+
+    // BOX MODEL
+    top: -14.3rem;
+    width: 100%;
+    height: 442.83rem;
+
+    // TYPOGRAPHY
+  }
+}
+
+@media (width > $phone) {
+  .article {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    gap: 104rem;
+    flex-wrap: wrap;
+
+    // BOX MODEL
+    padding-inline: 0rem;
+    padding-top: 114.5rem;
+    max-width: 1437rem;
+    margin-inline: auto;
+
+    // TYPOGRAPHY
+  }
+
+  .aside {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    // BOX MODEL
+    width: 664rem;
+    //   height: 732.23rem;
+
+    // TYPOGRAPHY
+
+    &:nth-child(2) {
+      margin-top: 100rem;
+    }
+  }
+
+  .img {
+    // DISPLAY
+    position: relative;
+    overflow: hidden;
+
+    // BOX MODEL
+    margin-top: 58rem;
+
+    width: 100%;
+    height: 406.45rem;
+
+    // TYPOGRAPHY
+  }
+
+  .heroimg {
+    // DISPLAY
+    position: absolute;
+
+    // BOX MODEL
+    top: -14.3rem;
+    width: 100%;
+    height: 442.83rem;
+
+    // TYPOGRAPHY
+  }
+}
