@@ -9,9 +9,9 @@ export default function Founded({}) {
       {/* assd */}
       <span className="header">
         <h2>FOUNDED IN PASSION</h2>
-        <Link className="buttoned" href="/#services">
+        <a className="buttoned" href="/#services">
           OUR SERVICES
-        </Link>
+        </a>
       </span>
       {/* <p className={`${style.p}  p-small`}>
         Established in 2019 by Mr Lot Mucavele who has over 10 years experience
