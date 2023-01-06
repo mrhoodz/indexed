@@ -20,7 +20,7 @@ export default function Vision({}) {
         <input type="file" name="email.com" id="email" placeholder="CV" />
         <div>
           <button className={style.button}>SUBMIT NOW</button>
-          <a className={` ${style.secondBTN}`}>CAREERS</a>
+          {/* <a className={` ${style.secondBTN}`}>CAREERS</a> */}
         </div>
       </form>
 
