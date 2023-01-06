@@ -10,7 +10,7 @@ export default function Vision({}) {
         <h2>CONTACT US</h2>
         <label>YOUR NAME</label>
 
-        <input type="email" name="email.com" id="email" placeholder="Name" />
+        <input type="text" name="email.com" id="email" placeholder="Name" />
 
         <label>YOUR EMAIL</label>
 
