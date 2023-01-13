@@ -8,7 +8,7 @@ import styled from "./line.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-import Line from "./line";
+// import Line from "./line";
 import { useScroll, useMotionValueEvent, motion } from "framer-motion";
 
 interface Props {
