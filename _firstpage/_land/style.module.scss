@@ -1,0 +1,186 @@
+@import "../../styles/colors";
+@import "../../styles/media query";
+
+.overlay {
+  // DISPLAY
+
+  position: absolute;
+  background: $primary-background-color;
+  opacity: 0.68;
+
+  // BOX MODEL
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  // TYPOGRAPHY
+}
+
+.article {
+  // DISPLAY
+  position: relative;
+  background-image: url("../../public/resized/pexels-yury-kim-585418 (Large).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  // BOX MODEL
+  padding-left: 60rem;
+  padding-top: calc(224rem + 14rem);
+  margin-top: -174rem;
+  // height: calc(1041rem + 124rem);
+  height: 818rem;
+
+  // TYPOGRAPHY
+
+  & .h3 {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    // flex-direction: column;
+    gap: 18rem;
+    // justify-content: flex-start;
+
+    // BOX MODEL
+    margin-top: 28.5rem;
+    width: 100%;
+
+    // TYPOGRAPHY
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 25rem;
+    letter-spacing: 0.02em;
+    line-height: 34rem;
+    color: $primary-text-color;
+
+    //  & li{
+    //   list-style: none;
+    //  }
+
+
+  }
+}
+
+.h1::before {
+  // DISPLAY
+  content: "WE DO";
+  position: absolute;
+
+  // BOX MODEL
+  top: -26rem;
+  left: 0;
+
+  // TYPOGRAPHY
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 21rem;
+  letter-spacing: 0.02em;
+  line-height: 34rem;
+  text-align: left;
+}
+
+.content {
+  position: relative;
+  // DISPLAY
+  display: flex;
+  flex-direction: column;
+
+  // BOX MODEL
+  width: 991rem;
+
+  // TYPOGRAPHY
+}
+
+@media (width > $phone) {
+  .overlay {
+    // DISPLAY
+
+    position: absolute;
+    background: $primary-background-color;
+    opacity: 0.68;
+
+    // BOX MODEL
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    // TYPOGRAPHY
+  }
+
+  .article {
+    // DISPLAY
+    position: relative;
+    background-image: url("../../public/resized/pexels-yury-kim-585418 (Large).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    // BOX MODEL
+    padding-left: 220rem;
+    padding-top: calc(224rem + 14rem);
+    margin-top: 54rem;
+    // height: calc(1041rem + 124rem);
+    height: 818rem;
+
+    // TYPOGRAPHY
+
+    & .h3 {
+      // DISPLAY
+      position: relative;
+      display: flex;
+      // flex-direction: column;
+      gap: 18rem;
+      // justify-content: flex-start;
+
+      // BOX MODEL
+      margin-top: 28.5rem;
+      width: 100%;
+
+      // TYPOGRAPHY
+
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 25rem;
+      letter-spacing: 0.02em;
+      line-height: 34rem;
+      color: $primary-text-color;
+
+      //  & li{
+      //   list-style: none;
+      //  }
+
+
+    }
+  }
+
+  .h1::before {
+    // DISPLAY
+    content: "WE DO";
+    position: absolute;
+
+    // BOX MODEL
+    top: -26rem;
+    left: 0;
+
+    // TYPOGRAPHY
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 21rem;
+    letter-spacing: 0.02em;
+    line-height: 34rem;
+    text-align: left;
+  }
+
+  .content {
+    position: relative;
+    // DISPLAY
+    display: flex;
+    flex-direction: column;
+
+    // BOX MODEL
+    width: 991rem;
+
+    // TYPOGRAPHY
+  }
+}

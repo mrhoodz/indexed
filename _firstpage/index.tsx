@@ -2,7 +2,7 @@
 import Services from "./services";
 import About from "./about";
 // import Index from "./index";
-import Land from "./land";
+import Land from "./_land";
 import React from "react";
 import axios from "axios";
 import { useRouter } from "next/router";

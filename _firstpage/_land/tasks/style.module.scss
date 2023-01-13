@@ -1,0 +1,75 @@
+@import "../../../styles/colors";
+@import "../../../styles/media query";
+
+.h3 {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    // flex-direction: column;
+    gap: 18rem;
+    // justify-content: flex-start;
+  
+    // BOX MODEL
+    margin-top: 28.5rem;
+    width: 100%;
+  
+    // TYPOGRAPHY
+  
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 25rem;
+    letter-spacing: 0.02em;
+    line-height: 34rem;
+    color: $primary-text-color;
+  
+    //  & li{
+    //   list-style: none;
+    //  }
+  
+    &::before {
+      content: "•";
+
+      position: relative;
+      top: 3rem;
+    }
+  }
+  
+
+
+
+  @media (width > $phone) {
+
+    .h3 {
+      // DISPLAY
+      position: relative;
+      display: flex;
+      // flex-direction: column;
+      gap: 18rem;
+      // justify-content: flex-start;
+    
+      // BOX MODEL
+      margin-top: 28.5rem;
+      width: 100%;
+    
+      // TYPOGRAPHY
+    
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 25rem;
+      letter-spacing: 0.02em;
+      line-height: 34rem;
+      color: $primary-text-color;
+    
+      //  & li{
+      //   list-style: none;
+      //  }
+    
+      &::before {
+        content: url("/resized/svg/Icon metro-my-location.svg");
+        position: relative;
+        top: 3rem;
+      }
+    }
+
+
+  }

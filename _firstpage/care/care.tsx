@@ -27,15 +27,16 @@ export function Care({}) {
 
   return (
     <article className={style.weCare}>
-      <aside className={style.sideImg}>os</aside>
+      <aside className={style.sideImg}>
+        <img src="/resized/_DSC2758 (2).JPG" alt="image goes here" />
+      </aside>
 
       <aside className={style.sideContent}>
         <h2>WE CARE ABOUT OUR TEAM MEMBERS AND PARTNERS</h2>
 
         <div>
           {values.map((item) => (
-            <span key={Math.random()} >
-              
+            <span key={Math.random()}>
               <h3>{item.value}</h3>
               <img
                 className={style.img}

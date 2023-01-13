@@ -55,11 +55,11 @@ export default function About({}) {
       {/* <Valuecards data={data} /> */}
 
       <div className={styles.hero} id="img">
-        <Image
+        <img
           className={styles.heroimg}
           height={1080}
           width={1620}
-          src="/resized/pexels-tranmautritam-448828 (Large).jpg"
+          src="/resized/IMG_6660 copy.jpg"
           alt="hero image"
         />
       </div>
