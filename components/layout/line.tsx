@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect } from "react";
 import style from "./line.module.scss";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";

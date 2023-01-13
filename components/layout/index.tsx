@@ -87,7 +87,7 @@ export default function Layout({ children }: Props) {
       {/* <Vision /> */}
       <footer className={style.footer}>
         <aside className={style.vision}>
-          <h1>"PROFIT, FOR A BETTER FUTURE"</h1>
+          <h1>PROFIT FOR A BETTER FUTURE</h1>
           <p>Lot Mucavele / Director</p>
         </aside>
 
