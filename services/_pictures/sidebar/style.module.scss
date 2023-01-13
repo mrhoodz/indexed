@@ -68,6 +68,21 @@
     -webkit-text-stroke-width: 0.6rem;
     -webkit-text-stroke-color: $primary-color;
     opacity: 0.78;
+
+
+& a{
+  color: black;
+}
+
+
+& a:link{
+  color: black;
+}
+
+& a:visited{
+  color: black;
+}
+
   }
   
   

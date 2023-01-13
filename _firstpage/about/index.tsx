@@ -52,7 +52,7 @@ export default function About({}) {
         suppliers with respect, while recognizing the significance of diversity.
       </p>
 
-      <Valuecards data={data} />
+      {/* <Valuecards data={data} /> */}
 
       <div className={styles.hero} id="img">
         <Image

@@ -2,6 +2,8 @@ import ServiceCards from "./servicecards";
 import React from "react";
 import style from "./style.module.scss";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 
 export default function Services({ data }: any) {
   interface serviceCardsProps {

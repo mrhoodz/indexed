@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./style.module.scss";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function ImageItem({ data }: any) {
   interface imageDataProps {
@@ -13,14 +14,20 @@ export default function ImageItem({ data }: any) {
   return (
     <>
       {data.map((item: any, index: any) => (
-        <Image
-          height={1080}
-          width={1920}
+        <motion.div
+          initial={{ scale: 0.7 }}
+          whileHover={{ scale: 1.05 }}
+          whileInView={{ scale: 1 }}
           key={index}
-          className={style.img}
-          src={`https://sea-lion-app-ggqop.ondigitalocean.app${item.attributes.url}`}
-          alt="image goes here"
-        />
+        >
+          <Image
+            height={1080}
+            width={1920}
+            className={style.img}
+            src={`https://sea-lion-app-ggqop.ondigitalocean.app${item.attributes.url}`}
+            alt="image goes here"
+          />
+        </motion.div>
       ))}
     </>
   );
