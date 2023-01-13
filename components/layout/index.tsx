@@ -4,6 +4,8 @@ import Footer from "../footer/footer";
 import Vision from "../vision";
 import style from "./layout.module.scss";
 import Link from "next/link";
+import Image from "next/image";
+
 import Line from "./line";
 import { useScroll, useMotionValueEvent, motion } from "framer-motion";
 
@@ -12,49 +14,34 @@ interface Props {
 }
 
 export default function Layout({ children }: Props) {
-
   const { scrollY } = useScroll();
   const [retra, setRetra] = React.useState(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest > 800) {
+      setRetra(true);
+      // console.log("Page scroll: ", latest)
 
+      // return {y :-100}
+    } else {
+      setRetra(false);
+      // console.log("Page scroll: ", latest)
 
-
- 
-
-  if( latest > 800 ){
-
-    setRetra(true)
-    console.log("Page scroll: ", latest)
-
-    return {y :-100}
-  
-  
-  }
-  else{
-    setRetra(false)
-    console.log("Page scroll: ", latest)
-
-    return {y :-100}
-  
-  }
-  
-
-
-
-
-  })
-
+      // return {y :-100}
+    }
+  });
 
   // tenary operator
   // const retra = latest > 800 ? true : false;
-  
 
   return (
     <>
       <Line />
 
-      <motion.header animate={{y: retra === true ? -60 : 0}}  className={style.header}>
+      <motion.header
+        animate={{ y: retra === true ? -60 : 0 }}
+        className={style.header}
+      >
         <address className={style.contactInfo}>
           <span className={style.locationAddress}>
             MEERKAT PLAZA NO 2, 28 ABSES STREET, KATHU
@@ -69,8 +56,8 @@ export default function Layout({ children }: Props) {
 
         <div className={style.navBar}>
           <span className={style.mainLogo}>
-            <img src={"/logo png.svg"} alt="logo goes here" />
-            <img src={"/logo text.svg"} alt="logo goes here" />
+            <Image fill src="/logo png.svg" alt="logo goes here" />
+            <Image fill src="/logo text.svg" alt="logo goes here" />
           </span>
 
           <nav>
