@@ -3,6 +3,8 @@ import Header from "../header/header";
 import Footer from "../footer/footer";
 import Vision from "../vision";
 import style from "./layout.module.scss";
+import styled from "./line.module.scss";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,6 +17,7 @@ interface Props {
 
 export default function Layout({ children }: Props) {
   const { scrollY } = useScroll();
+  const { scrollYProgress } = useScroll();
   const [retra, setRetra] = React.useState(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -36,7 +39,10 @@ export default function Layout({ children }: Props) {
 
   return (
     <>
-      <Line />
+      {/* <Line /> */}
+      <motion.div style={{ scaleX: scrollYProgress }} className={styled.line}>
+        line
+      </motion.div>
 
       <motion.header
         animate={{ y: retra === true ? -60 : 0 }}
@@ -56,8 +62,8 @@ export default function Layout({ children }: Props) {
 
         <div className={style.navBar}>
           <span className={style.mainLogo}>
-            <Image fill src="/logo png.svg" alt="logo goes here" />
-            <Image fill src="/logo text.svg" alt="logo goes here" />
+            <img  src="/logo png.svg" alt="logo goes here" />
+            <img  src="/logo text.svg" alt="logo goes here" />
           </span>
 
           <nav>
