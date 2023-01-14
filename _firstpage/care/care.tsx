@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./style.module.scss";
 import crypto from "crypto";
+import { motion } from "framer-motion";
 
 export function Care({}) {
   interface valueProps {
@@ -36,14 +37,18 @@ export function Care({}) {
 
         <div>
           {values.map((item) => (
-            <span key={Math.random()}>
+            <motion.span
+              initial={{ x: 200 }}
+              whileInView={{ x: 0 }}
+              key={Math.random()}
+            >
               <h3>{item.value}</h3>
               <img
                 className={style.img}
                 src={item.icon}
                 alt="img goes here"
               />{" "}
-            </span>
+            </motion.span>
           ))}
         </div>
       </aside>

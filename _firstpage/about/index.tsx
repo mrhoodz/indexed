@@ -47,9 +47,9 @@ export default function About({}) {
         Established in 2019 by Mr Lot Mucavele who has over 10 years experience
         in engineering and project management fields. We service our clients
         with the highest quality of workmanship. Our passion is to deliver value
-        to our clients by offering affordable high quality engineering. Skills
-        and a superior customer experience. We care about our team members and
-        suppliers with respect, while recognizing the significance of diversity.
+        to our clients by offering affordable high quality engineering skills
+        and a superior customer experience. We recognize the significance of
+        diversity and prioritize respecting our team members and partners.
       </p>
 
       {/* <Valuecards data={data} /> */}

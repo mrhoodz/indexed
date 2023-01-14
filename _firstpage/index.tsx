@@ -18,9 +18,9 @@ export default function Prime({ data }: any) {
   return (
     <>
       <Land />
-      <About />
       <Care />
       <Services data={data} />
+      <About />
     </>
   );
 }

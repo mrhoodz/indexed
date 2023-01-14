@@ -62,15 +62,23 @@ export default function Layout({ children }: Props) {
 
         <div className={style.navBar}>
           <span className={style.mainLogo}>
-            <img  src="/logo png.svg" alt="logo goes here" />
-            <img  src="/logo text.svg" alt="logo goes here" />
+            <img
+              className={style.png}
+              src="/logo png.svg"
+              alt="logo goes here"
+            />
+            <img
+              className={style.text}
+              src="/logo text.svg"
+              alt="logo goes here"
+            />
           </span>
 
           <nav>
             <Link className={style.link} href="/">
               HOME
             </Link>
-            <Link className={style.link} href="/#services">
+            <Link className={style.link} href="/#our-services">
               SERVICES
             </Link>
             <Link className={style.link} href="/about-us">
@@ -106,9 +114,9 @@ export default function Layout({ children }: Props) {
             <Link className={style.Link} href={"/about-us"}>
               ABOUT US
             </Link>
-            <Link className={style.Link} href={"/#services"}>
+            <a className={style.Link} href="/#services">
               SERVICES
-            </Link>
+            </a>
             <Link className={style.Link} href={"/contact-us/careers"}>
               CAREERS
             </Link>
@@ -132,8 +140,16 @@ export default function Layout({ children }: Props) {
 
           <div className={style.logoAddress}>
             <span className={style.mainLogo}>
-              <img src={"/logo png.svg"} alt="logo goes here" />
-              <img src={"/logo text.svg"} alt="logo goes here" />
+              <img
+                className={style.png}
+                src="/logo png.svg"
+                alt="logo goes here"
+              />
+              <img
+                className={style.text}
+                src="/logo text.svg"
+                alt="logo goes here"
+              />
             </span>
 
             <address className={style.contactInfo}>

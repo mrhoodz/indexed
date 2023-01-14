@@ -57,8 +57,6 @@
     //  & li{
     //   list-style: none;
     //  }
-
-
   }
 }
 
@@ -119,9 +117,9 @@
     // BOX MODEL
     padding-left: 220rem;
     padding-top: calc(224rem + 14rem);
-    margin-top: 54rem;
+    margin-top: 94rem;
     // height: calc(1041rem + 124rem);
-    height: 818rem;
+    height: 950rem;
 
     // TYPOGRAPHY
 
@@ -134,13 +132,13 @@
       // justify-content: flex-start;
 
       // BOX MODEL
-      margin-top: 28.5rem;
+      margin-top: 12.5rem;
       width: 100%;
 
       // TYPOGRAPHY
 
       font-family: Poppins;
-      font-weight: 500;
+      font-weight: normal;
       font-size: 25rem;
       letter-spacing: 0.02em;
       line-height: 34rem;
@@ -149,8 +147,40 @@
       //  & li{
       //   list-style: none;
       //  }
+    }
+  }
 
+  .buttonzone {
+    display: flex;
+    gap: 20rem;
+    margin-top: 50rem;
+    margin-left: -10rem;
 
+    & .round {
+      position: relative;
+      background-color: aliceblue;
+      height: 68rem;
+      width: 68rem;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 23rem;
+      color: green;
+      font-weight: 700;
+
+      &::after {
+        content: "Download our profile";
+        position: absolute;
+        top: 20rem;
+        right: -230rem;
+        font-size: 18rem;
+        width: max-content;
+        color: whitesmoke;
+        font-weight: 500;
+        //uppercase
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -182,5 +212,40 @@
     width: 991rem;
 
     // TYPOGRAPHY
+  }
+
+  .services {
+    position: absolute;
+    bottom: -30rem;
+    right: 30rem;
+    // background-color: aqua;
+    display: flex;
+    gap: 20rem;
+
+    height: 300rem;
+    // width: 320rem;
+
+    & span {
+      position: relative;
+      // background-color: antiquewhite;
+      height: 203rem;
+      width: 340rem;
+      // overflow: hidden;
+
+      & p {
+        position: absolute;
+        bottom: -43rem;
+        font-size: 21rem;
+        font-weight: 600;
+        color: whitesmoke;
+      }
+
+      & img {
+        position: relative;
+        border-radius: 13rem;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
