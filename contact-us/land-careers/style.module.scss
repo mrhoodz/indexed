@@ -28,7 +28,7 @@
   // padding-left: 220rem;
   padding-inline: 60rem;
   padding-top: calc(224rem + 14rem);
-  margin-top: -174rem;
+  margin-top: 54rem;
   // height: calc(1041rem + 124rem);
   height: 818rem;
 
@@ -76,57 +76,52 @@
   }
 }
 
-
-
-
-
 @media (width > $phone) {
-
   .overlay {
     // DISPLAY
-  
+
     position: absolute;
     background: $primary-background-color;
     opacity: 0.68;
-  
+
     // BOX MODEL
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-  
+
     // TYPOGRAPHY
   }
-  
+
   .article {
     // DISPLAY
     position: relative;
     background-image: url("../../public/resized/pexels-yury-kim-585418 (Large).jpg");
     background-size: cover;
     background-repeat: no-repeat;
-  
+
     // BOX MODEL
     padding-left: 220rem;
     padding-top: calc(224rem + 14rem);
-    margin-top: -174rem;
+    margin-top: 74rem;
     // height: calc(1041rem + 124rem);
     height: 818rem;
-  
+
     // TYPOGRAPHY
   }
-  
+
   .content {
     position: relative;
     // DISPLAY
     display: flex;
     flex-direction: column;
-  
+
     // BOX MODEL
     width: 991rem;
-  
+
     // TYPOGRAPHY
   }
-  
+
   .h3 {
     // DISPLAY
     position: relative;
@@ -134,27 +129,24 @@
     gap: 18rem;
     // justify-content: center;
     align-items: center;
-  
+
     // BOX MODEL
     margin-top: 28.5rem;
     width: 100%;
-  
+
     // TYPOGRAPHY
-  
+
     font-family: Poppins;
     font-weight: 500;
     font-size: 25rem;
     letter-spacing: 0.02em;
     line-height: 34rem;
     color: $primary-text-color;
-  
+
     &::before {
       content: url("/resized/svg/Icon metro-my-location.svg");
       position: relative;
       top: 3rem;
     }
   }
-  
-
-
 }

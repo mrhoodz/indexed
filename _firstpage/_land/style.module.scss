@@ -27,9 +27,9 @@
   // BOX MODEL
   padding-left: 60rem;
   padding-top: calc(224rem + 14rem);
-  margin-top: -174rem;
+  margin-top: 74rem;
   // height: calc(1041rem + 124rem);
-  height: 818rem;
+  height: 918rem;
 
   // TYPOGRAPHY
 
@@ -57,6 +57,41 @@
     //  & li{
     //   list-style: none;
     //  }
+  }
+}
+
+
+.buttonzone {
+  display: flex;
+  gap: 20rem;
+  margin-top: 50rem;
+  margin-left: -10rem;
+
+  & .round {
+    position: relative;
+    background-color: aliceblue;
+    height: 68rem;
+    width: 68rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23rem;
+    color: green;
+    font-weight: 700;
+
+    &::after {
+      content: "Download our profile";
+      position: absolute;
+      top: 20rem;
+      right: -230rem;
+      font-size: 18rem;
+      width: max-content;
+      color: whitesmoke;
+      font-weight: 500;
+      //uppercase
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -90,6 +125,41 @@
   // TYPOGRAPHY
 }
 
+.services {
+  position: absolute;
+  bottom: -30rem;
+  right: -30rem;
+  // background-color: aqua;
+  display: flex;
+  gap: 20rem;
+
+  height: 300rem;
+  // width: 320rem;
+
+  & span {
+    position: relative;
+    // background-color: antiquewhite;
+    height: 203rem;
+    width: 340rem;
+    // overflow: hidden;
+
+    & p {
+      position: absolute;
+      bottom: -43rem;
+      font-size: 21rem;
+      font-weight: 600;
+      color: whitesmoke;
+    }
+
+    & img {
+      position: relative;
+      border-radius: 13rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 @media (width > $phone) {
   .overlay {
     // DISPLAY
@@ -110,7 +180,7 @@
   .article {
     // DISPLAY
     position: relative;
-    background-image: url("../../public/resized/pexels-yury-kim-585418 (Large).jpg");
+    background-image: url("/resized/3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./style.module.scss";
 import Tasks from "./tasks";
 import { motion } from "framer-motion";
@@ -33,6 +33,22 @@ export default function Land({ data }: any) {
   //   },
   // ];
 
+  //change state after 2 seconds
+
+  const [h3, setH3] = useState("Mechanical and Civil Constuction");
+
+  // setInterval(() => {
+  //   setH3("Agricultural Engineering");
+  // }, 2000);
+
+  // setTimeOut(() => {
+  //   setH3("Road Construction");
+  // }, 4000);
+
+  // setInterval(() => {
+  //   setH3("Road Construction");
+  // }, 4000);
+
   return (
     <article className={style.article} id="article">
       <div className={style.overlay}>ve</div>
@@ -47,7 +63,7 @@ export default function Land({ data }: any) {
           whileInView={{ scale: 1 }}
           className={style.h1}
         >
-          Mechanical and Civil Constuction{" "}
+          {h3}
         </motion.h1>
         <motion.h3
           initial={{ scale: 1.1 }}
@@ -78,20 +94,20 @@ export default function Land({ data }: any) {
         className={style.services}
       >
         <span>
-          <Link href={"/services/road-construction"}>
+          <Link href={"/services/mechanical-and-civil-engineering"}>
             <img src="/resized/_DSC2758 (2).JPG" alt="image goes here" />{" "}
             <p>Mechanical Engineering</p>{" "}
           </Link>
         </span>
         <span>
-          <Link href={"/services/road-construction"}>
-            <img src="/resized/3.JPG" alt="image goes here" />{" "}
+          <Link href={"/services/agricultural-engineering"}>
+            <img src="/resized/3.jpg" alt="image goes here" />{" "}
             <p>Agricultural Engineering</p>{" "}
           </Link>
         </span>
         <span>
           <Link href={"/services/road-construction"}>
-            <img src="/resized/2.JPG" alt="image goes here" />{" "}
+            <img src="/resized/2.jpg" alt="image goes here" />{" "}
             <p>Road Construction </p>{" "}
           </Link>
         </span>

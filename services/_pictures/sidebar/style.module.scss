@@ -17,10 +17,10 @@
   font-size: 30rem;
   line-height: 63.6rem;
   text-align: left;
-  color: $primary-color;
-  -webkit-text-fill-color: $primary-color; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 0.6rem;
-  -webkit-text-stroke-color: $primary-color;
+  color: black;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.6rem;
+    -webkit-text-stroke-color: black;
   opacity: 0.78;
 }
 
@@ -63,10 +63,10 @@
     font-size: 30rem;
     line-height: 63.6rem;
     text-align: left;
-    color: $primary-color;
-    -webkit-text-fill-color: $primary-color; /* Will override color (regardless of order) */
+    color: black;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 0.6rem;
-    -webkit-text-stroke-color: $primary-color;
+    -webkit-text-stroke-color: black;
     opacity: 0.78;
 
 
@@ -74,6 +74,9 @@
   color: black;
 }
 
+& a:hover{
+  color: red;
+}
 
 & a:link{
   color: black;

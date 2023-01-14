@@ -124,16 +124,25 @@ export default function Layout({ children }: Props) {
 
           <div className={style.company}>
             <h2>Services</h2>
-            <Link className={style.Link} href={"/"}>
+            <Link
+              className={style.Link}
+              href={"/services/mechanical-and-civil-engineering"}
+            >
               Mechanical and Civil Constrution
             </Link>
-            <Link className={style.Link} href={"/"}>
+            <Link className={style.Link} href={"/services/renewable-energy"}>
               Renewable Energy
             </Link>
-            <Link className={style.Link} href={"/"}>
+            <Link
+              className={style.Link}
+              href={"/services/agricultural-engineering"}
+            >
               Agricultural Engineering
             </Link>
-            <Link className={style.Link} href={"/"}>
+            <Link
+              className={style.Link}
+              href={"/services/workshop-equipment-supply"}
+            >
               Workshop Equipment Supply
             </Link>
           </div>

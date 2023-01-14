@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/media query";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
@@ -88,7 +89,7 @@
 
       & .link {
         // DISPLAY
-
+display: none;
         // BOX MODEL
 
         // TYPOGRAPHY
@@ -195,10 +196,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap: 80rem;
+    padding-block: 90rem;
 
     // BOX MODEL
     width: 100%;
-    height: 511rem;
+    height: 781rem;
 
     // TYPOGRAPHY
 
@@ -247,6 +250,7 @@
       & .mainLogo {
         // DISPLAY
         display: flex;
+
         flex-direction: column;
         gap: 17rem;
 
@@ -321,6 +325,338 @@
       font-size: 18rem;
       font-weight: 500;
       color: whitesmoke;
+    }
+  }
+}
+
+@media (width > $phone) {
+  .header {
+    // DISPLAY
+    position: fixed;
+    background-color: $primary-background-color;
+    display: flex;
+    flex-direction: column;
+    //    justify-content: center;
+
+    // BOX MODEL
+    top: 0rem;
+    left: 0rem;
+    width: 100vw;
+    height: 202rem;
+    z-index: 100;
+
+    & .contactInfo {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      color: #fff;
+
+      & span {
+        color: inherit;
+      }
+
+      & .phoneNumber {
+        margin-left: 90rem;
+      }
+
+      height: 65rem;
+
+      //BOX MODEL
+      padding-inline: 104rem;
+      width: 100%;
+
+      // TYPOGRAPHY
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-size: 16rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      line-height: 22rem;
+      color: #fff;
+    }
+
+    & .navBar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      padding-inline: 124.5rem;
+
+      // BOX MODEL
+      width: 100%;
+      height: 137rem;
+
+      & .mainLogo {
+        display: flex;
+        gap: 20rem;
+
+        & .png {
+          position: relative;
+          width: 120rem;
+          height: auto;
+        }
+
+        & .text {
+          position: relative;
+          width: 260rem;
+          height: auto;
+        }
+      }
+
+      & nav {
+        // DISPLAY
+        display: flex;
+        gap: 68rem;
+
+        // BOX MODEL
+
+        // TYPOGRAPHY
+
+        & .link {
+          // DISPLAY
+          display: block;
+
+          // BOX MODEL
+
+          // TYPOGRAPHY
+          font-family: "Poppins", sans-serif;
+          font-size: 22rem;
+          font-weight: 500;
+          color: $primary-text-color;
+          transition: 0.2s ease-in-out;
+        }
+
+        & .link:hover {
+          color: $secondary-color;
+        }
+        & .link:link {
+          text-decoration: none;
+        }
+      }
+
+      & .getQuote {
+        // DISPLAY
+        position: relative;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // BOX MODEL
+        width: 170rem;
+        height: 52rem;
+        border-radius: 26rem;
+
+        // TYPOGRAPHY
+        color: black;
+        font-family: "Poppins", sans-serif;
+        font-size: 18rem;
+        font-weight: 600;
+
+        &:link {
+          text-decoration: none;
+        }
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    // TYPOGRAPHY
+  }
+
+  .footer {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // BOX MODEL
+    background-color: $primary-background-color;
+    margin-top: 188rem;
+
+    // TYPOGRAPHY
+
+    & .vision {
+      // DISPLAY
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      // BOX MODEL
+      background-image: url("/resized/pexels-yury-kim-585418 (Large).jpg");
+      background-color: red;
+      padding-top: 22rem;
+      padding-bottom: 49rem;
+      width: 100%;
+      height: 659.98rem;
+
+      // TYPOGRAPHY
+
+      & h1 {
+        //typography
+        font-weight: 700;
+        font-size: 105.48rem;
+        line-height: 126.57rem;
+        width: 530rem;
+        text-align: center;
+      }
+
+      & p {
+        //typography
+        font-weight: 500;
+        font-size: 29rem;
+        width: 530rem;
+        text-align: center;
+
+        margin-top: 25rem;
+      }
+    }
+
+    & .bottomNav {
+      // DISPLAY
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+
+
+          gap: 0rem;
+    padding-block: 0rem;
+
+      // BOX MODEL
+      width: 100%;
+      height: 511rem;
+
+      // TYPOGRAPHY
+
+      & .company {
+        display: flex;
+        gap: 22rem;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        & h2 {
+          font-weight: 700;
+          font-size: 34rem;
+          color: $primary-text-color;
+        }
+
+        & .Link {
+          display: block;
+
+          font-weight: 500;
+          font-size: 22rem;
+          color: $primary-text-color;
+          // margin-top: 20rem;
+          margin-bottom: 8rem;
+          transition: 0.2s ease-in-out;
+
+          &:hover {
+            color: $secondary-color;
+          }
+
+          &:link {
+            text-decoration: none;
+          }
+        }
+      }
+
+      & .logoAddress {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        gap: 41rem;
+
+        //Box Model
+        // background-color: orangered;
+        width: 456.9rem;
+        height: 292.5rem;
+
+        & .mainLogo {
+          // DISPLAY
+          display: flex;
+          flex-direction: column;
+          gap: 17rem;
+
+          // BOX MODEL
+
+          // TYPOGRAPHY
+
+          & .png {
+            position: relative;
+            // width: 220rem;
+            height: 120rem;
+          }
+
+          & .text {
+            position: relative;
+            width: 260rem;
+            height: auto;
+          }
+        }
+
+        & .contactInfo {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          // justify-content: space-between;
+          align-items: center;
+          // background-color: black;
+          color: #fff;
+          gap: 10rem;
+
+          & span {
+            color: inherit;
+          }
+
+          // & .phoneNumber {
+          //   margin-left: 90rem;
+          // }
+
+          //BOX MODEL
+          // padding-inline: 104rem;
+          width: 100%;
+
+          // TYPOGRAPHY
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-size: 16rem;
+          font-weight: 400;
+          letter-spacing: 0.02em;
+          line-height: 22rem;
+          color: #fff;
+        }
+      }
+    }
+
+    & .outro {
+      background-color: black;
+      color: #fff;
+
+      // DISPLAY
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      // BOX MODEL
+      width: 100%;
+      height: 65.74rem;
+
+      // TYPOGRAPHY
+
+      & span {
+        font-size: 18rem;
+        font-weight: 500;
+        color: whitesmoke;
+      }
     }
   }
 }

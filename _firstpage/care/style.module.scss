@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/media query";
 
 .weCare {
   // DISPLAY
@@ -8,7 +9,7 @@
   // flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  gap: 77rem;
+  gap: 57rem;
 
   // BOX MODEL
   padding-top: 149rem;
@@ -24,13 +25,14 @@
 
     // BOX MODEL
 
-    width: 656rem;
-    height: 759.15rem;
+    width: 396rem;
+    height: 719.15rem;
     overflow: hidden;
 
     // TYPOGRAPHY
-    & img{
+    & img {
       position: relative;
+      height: 100%;
       margin-left: -300rem;
     }
   }
@@ -90,6 +92,104 @@
           // BOX MODEL
           width: 73rem;
           height: 73rem;
+        }
+      }
+    }
+  }
+}
+
+@media (width > $phone) {
+  .weCare {
+    // DISPLAY
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 77rem;
+
+    // BOX MODEL
+    padding-top: 149rem;
+    margin-bottom: 120rem;
+    // margin-inline: auto;
+
+    // TYPOGRAPHY
+
+    & .sideImg {
+      // DISPLAY
+      position: relative;
+      background-color: aqua;
+
+      // BOX MODEL
+
+      width: 656rem;
+      height: 759.15rem;
+      overflow: hidden;
+
+      // TYPOGRAPHY
+      & img {
+        position: relative;
+        margin-left: -300rem;
+      }
+    }
+
+    & .sideContent {
+      // DISPLAY
+      position: relative;
+
+      // BOX MODEL
+      width: 574rem;
+      height: 543.88rem;
+
+      // TYPOGRAPHY
+
+      & h2 {
+        //typography
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        line-height: 63.6rem;
+
+        width: 546rem;
+        font-weight: 700;
+      }
+
+      & div {
+        // background-color: peru;
+        display: flex;
+        flex-direction: column;
+        gap: 35rem;
+
+        // BOX MODEL
+        margin-top: 73rem;
+        margin-left: -5rem;
+
+        & span {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-inline: 30rem;
+          width: 516rem;
+          height: 104rem;
+
+          background-color: white;
+          box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.1);
+
+          //create a box shadow
+
+          & h3 {
+            //typography
+            font-family: "Poppins", sans-serif;
+            font-size: 25rem;
+            font-weight: 700;
+          }
+
+          & .img {
+            position: relative;
+            // BOX MODEL
+            width: 73rem;
+            height: 73rem;
+          }
         }
       }
     }
