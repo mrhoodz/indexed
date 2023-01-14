@@ -12,13 +12,13 @@ export default function Vision({}) {
           Our mission is to deliver personalized customer attention and
           efficiency while providing top-quality engineering services. We are
           committed to excellence in everything we do and strive to exceed our
-          customers&apos;  expectations.
+          customers&apos; expectations.
         </p>
 
         <div className={`hero ${style.img}`} id="img">
           <Image
-          width={1920}
-          height={1080}
+            width={1920}
+            height={1080}
             className={` ${style.heroimg}`}
             src="/resized/pexels-anamul-rezwan-1145434 (Large).jpg"
             alt="hero image"
@@ -39,11 +39,10 @@ export default function Vision({}) {
 
         <div className={`hero ${style.img}`} id="img">
           <Image
-                    width={1920}
-                    height={1080}
-          
+            width={1920}
+            height={1080}
             className={` ${style.heroimg}`}
-            src="/resized/pexels-pixabay-259984 (Large).jpg"
+            src="/resized/2.jpg"
             alt="hero image"
           />
         </div>
