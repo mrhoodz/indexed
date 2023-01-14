@@ -82,7 +82,14 @@ export default function Land({ data }: any) {
             READ MORE
           </Link>
 
-          <div className={style.round}>+</div>
+          <a
+            href="/resized/5StarCompanyProfile.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={style.round}
+          >
+            +
+          </a>
         </div>
 
         {/* <Tasks data={tasksData} /> */}
