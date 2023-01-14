@@ -57,21 +57,16 @@ export default function Land({ data }: any) {
           {" "}
           5 star engineering solutions was established in 2019 by Mr Lot
           Mucavele who has over 10 years experience in engineering and project
-          management fields. We service our clients with the highest .
+          management fields. We service our clients with the highest quality of
+          workmanship.
         </motion.h3>
 
-
         <div className={style.buttonzone}>
+          <Link className="buttoned" href="/contact-us">
+            READ MORE
+          </Link>
 
-        <Link className="buttoned" href="/contact-us">
-          READ MORE
-        </Link>
-
-
-        <div className={style.round}>
-          +
-        </div>
-        
+          <div className={style.round}>+</div>
         </div>
 
         {/* <Tasks data={tasksData} /> */}
@@ -83,16 +78,22 @@ export default function Land({ data }: any) {
         className={style.services}
       >
         <span>
-          <img src="/resized/_DSC2758 (2).JPG" alt="image goes here" />{" "}
-          <p>Mechanical Engineering</p>{" "}
+          <Link href={"/services/road-construction"}>
+            <img src="/resized/_DSC2758 (2).JPG" alt="image goes here" />{" "}
+            <p>Mechanical Engineering</p>{" "}
+          </Link>
         </span>
         <span>
-          <img src="/resized/_DSC2758 (2).JPG" alt="image goes here" />{" "}
-          <p>Agricultural Engineering</p>{" "}
+          <Link href={"/services/road-construction"}>
+            <img src="/resized/3.JPG" alt="image goes here" />{" "}
+            <p>Agricultural Engineering</p>{" "}
+          </Link>
         </span>
         <span>
-          <img src="/resized/_DSC2758 (2).JPG" alt="image goes here" />{" "}
-          <p>Road Construction </p>{" "}
+          <Link href={"/services/road-construction"}>
+            <img src="/resized/2.JPG" alt="image goes here" />{" "}
+            <p>Road Construction </p>{" "}
+          </Link>
         </span>
       </motion.div>
     </article>

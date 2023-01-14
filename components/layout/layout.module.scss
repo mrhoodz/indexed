@@ -64,20 +64,17 @@
       display: flex;
       gap: 20rem;
 
-
-      & .png{
+      & .png {
         position: relative;
         width: 120rem;
         height: auto;
       }
 
-
-      & .text{
+      & .text {
         position: relative;
         width: 260rem;
         height: auto;
       }
-
     }
 
     & nav {
@@ -161,7 +158,8 @@
     justify-content: center;
 
     // BOX MODEL
-    background-color: aqua;
+    background-image: url("/resized/pexels-yury-kim-585418 (Large).jpg");
+    background-color: red;
     padding-top: 22rem;
     padding-bottom: 49rem;
     width: 100%;
@@ -256,20 +254,17 @@
 
         // TYPOGRAPHY
 
-
-        & .png{
+        & .png {
           position: relative;
           // width: 220rem;
           height: 120rem;
         }
-  
-  
-        & .text{
+
+        & .text {
           position: relative;
           width: 260rem;
           height: auto;
         }
-
       }
 
       & .contactInfo {
