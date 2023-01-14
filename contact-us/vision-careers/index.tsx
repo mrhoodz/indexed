@@ -40,7 +40,7 @@ export default function Vision({}) {
             width={1920}
             height={1080}
             className={` ${style.heroimg}`}
-            src="/resized/pexels-pixabay-259984 (Large).jpg"
+            src="/resized/2.jpg"
             alt="hero image"
           />
         </div>
