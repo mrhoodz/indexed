@@ -47,6 +47,64 @@
   // TYPOGRAPHY
 }
 
+// .h3 {
+//   // DISPLAY
+//   position: relative;
+//   display: flex;
+//   gap: 18rem;
+//   // justify-content: center;
+//   align-items: center;
+
+//   // BOX MODEL
+//   margin-top: 28.5rem;
+//   width: 100%;
+
+//   // TYPOGRAPHY
+
+//   font-family: Poppins;
+//   font-weight: 500;
+//   font-size: 25rem;
+//   letter-spacing: 0.02em;
+//   line-height: 34rem;
+//   color: $primary-text-color;
+
+//   &::before {
+//     content: "•";
+
+//     position: relative;
+//     top: 3rem;
+//   }
+// }
+
+.h2 {
+  // DISPLAY
+  position: relative;
+  display: flex;
+  gap: 18rem;
+  // justify-content: center;
+  align-items: center;
+
+  // BOX MODEL
+  margin-top: 28.5rem;
+  width: 100%;
+
+  // TYPOGRAPHY
+
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 25rem;
+  letter-spacing: 0.02em;
+  line-height: 34rem;
+  color: $primary-text-color;
+
+  &::before {
+    content: "•";
+    position: relative;
+    top: 3rem;
+  }
+}
+
+
 .h3 {
   // DISPLAY
   position: relative;
@@ -70,11 +128,41 @@
 
   &::before {
     content: "•";
-
     position: relative;
     top: 3rem;
   }
 }
+
+
+.h4 {
+  // DISPLAY
+  position: relative;
+  display: flex;
+  gap: 18rem;
+  // justify-content: center;
+  align-items: center;
+
+  // BOX MODEL
+  margin-top: 28.5rem;
+  width: 100%;
+
+  // TYPOGRAPHY
+
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 25rem;
+  letter-spacing: 0.02em;
+  line-height: 34rem;
+  color: $primary-text-color;
+
+  &::before {
+    content: "•";
+    position: relative;
+    top: 3rem;
+  }
+}
+
+
 
 @media (width > $phone) {
   .overlay {
@@ -122,6 +210,35 @@
     // TYPOGRAPHY
   }
 
+  .h2 {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    gap: 18rem;
+    // justify-content: center;
+    align-items: center;
+
+    // BOX MODEL
+    margin-top: 28.5rem;
+    width: 100%;
+
+    // TYPOGRAPHY
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 25rem;
+    letter-spacing: 0.02em;
+    line-height: 34rem;
+    color: $primary-text-color;
+
+    &::before {
+      content: url("/imgIcon/Icon zocial-email.svg");
+      position: relative;
+      top: 3rem;
+    }
+  }
+
+
   .h3 {
     // DISPLAY
     position: relative;
@@ -144,9 +261,40 @@
     color: $primary-text-color;
 
     &::before {
-      content: url("/resized/svg/Icon metro-my-location.svg");
+      content: url("/imgIcon/Icon awesome-info-circle.svg");
       position: relative;
       top: 3rem;
     }
   }
+
+
+  .h4 {
+    // DISPLAY
+    position: relative;
+    display: flex;
+    gap: 18rem;
+    // justify-content: center;
+    align-items: center;
+
+    // BOX MODEL
+    margin-top: 28.5rem;
+    width: 100%;
+
+    // TYPOGRAPHY
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 25rem;
+    letter-spacing: 0.02em;
+    line-height: 34rem;
+    color: $primary-text-color;
+
+    &::before {
+      content: url("/imgIcon/Icon ionic-ios-call.svg");
+      position: relative;
+      top: 3rem;
+    }
+  }
+
+
 }

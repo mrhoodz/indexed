@@ -13,13 +13,13 @@ export default function Land({}) {
           Kathu{" "}
         </h1>
 
-        <h3 className={style.h3}>
+        <h3 className={style.h2}>
          sales@5staregineering.co.za
         </h3>
         <h3 className={style.h3}>
         info@5staregineering.co.za
         </h3>
-        <h3 className={style.h3}>
+        <h3 className={style.h4}>
         053 753 1404
         </h3>
       </div>

@@ -89,7 +89,7 @@
 
       & .link {
         // DISPLAY
-display: none;
+        display: none;
         // BOX MODEL
 
         // TYPOGRAPHY
@@ -152,6 +152,7 @@ display: none;
   // TYPOGRAPHY
 
   & .vision {
+    position: relative;
     // DISPLAY
     display: flex;
     flex-direction: column;
@@ -160,13 +161,23 @@ display: none;
 
     // BOX MODEL
     background-image: url("/resized/pexels-yury-kim-585418 (Large).jpg");
-    background-color: red;
+    color: white;
     padding-top: 22rem;
     padding-bottom: 49rem;
     width: 100%;
     height: 659.98rem;
 
     // TYPOGRAPHY
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.375);
+    }
 
     & h1 {
       //typography
@@ -175,6 +186,7 @@ display: none;
       line-height: 126.57rem;
       width: 530rem;
       text-align: center;
+      z-index: 100;
     }
 
     & p {
@@ -185,6 +197,7 @@ display: none;
       text-align: center;
 
       margin-top: 25rem;
+      z-index: 100;
     }
   }
 
@@ -488,7 +501,6 @@ display: none;
 
       // BOX MODEL
       background-image: url("/resized/pexels-yury-kim-585418 (Large).jpg");
-      background-color: red;
       padding-top: 22rem;
       padding-bottom: 49rem;
       width: 100%;
@@ -525,9 +537,8 @@ display: none;
       justify-content: space-around;
       align-items: center;
 
-
-          gap: 0rem;
-    padding-block: 0rem;
+      gap: 0rem;
+      padding-block: 0rem;
 
       // BOX MODEL
       width: 100%;
