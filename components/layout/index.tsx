@@ -114,9 +114,9 @@ export default function Layout({ children }: Props) {
             <Link className={style.Link} href={"/about-us"}>
               ABOUT US
             </Link>
-            <a className={style.Link} href="/#services">
+            <Link className={style.Link} href="/#services">
               SERVICES
-            </a>
+            </Link>
             <Link className={style.Link} href={"/contact-us/careers"}>
               CAREERS
             </Link>
