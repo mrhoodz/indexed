@@ -19,7 +19,7 @@ export default function ServiceCards({ data }: any) {
     <>
       {data.map((item: any) => (
         <>
-          <Link href={`services/${item.attributes.slug}`}>
+          <Link key={Math.random()} href={`services/${item.attributes.slug}`}>
             {" "}
             <motion.div
               initial={{ scale: 0.3 }}
