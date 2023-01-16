@@ -180,7 +180,7 @@ export default function Layout({ children }: Props) {
 
           <span>2023© </span>
 
-          <span> Developed by: JuggleAfrica 071 9353 205</span>
+          <span> Developed by: JuggleAfrica 068-083-0765</span>
         </div>
       </footer>
     </>
