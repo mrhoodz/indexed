@@ -61,18 +61,20 @@ export default function Layout({ children }: Props) {
         </address>
 
         <div className={style.navBar}>
-          <span className={style.mainLogo}>
-            <img
-              className={style.png}
-              src="/logo png.svg"
-              alt="logo goes here"
-            />
-            <img
-              className={style.text}
-              src="/logo text.svg"
-              alt="logo goes here"
-            />
-          </span>
+          <Link href={"/"}>
+            <span className={style.mainLogo}>
+              <img
+                className={style.png}
+                src="/logo png.svg"
+                alt="logo goes here"
+              />
+              <img
+                className={style.text}
+                src="/logo text.svg"
+                alt="logo goes here"
+              />
+            </span>
+          </Link>
 
           <nav>
             <Link className={style.link} href="/">
