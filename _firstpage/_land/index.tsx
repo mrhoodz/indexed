@@ -3,6 +3,7 @@ import style from "./style.module.scss";
 import Tasks from "./tasks";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Land({ data }: any) {
   // console.log(data)
@@ -78,7 +79,10 @@ export default function Land({ data }: any) {
         </motion.h3>
 
         <div className={style.buttonzone}>
-          <Link className="buttoned" href="/contact-us">
+          <Link
+            className="buttoned"
+            href={"/services/mechanical-and-civil-engineering"}
+          >
             READ MORE
           </Link>
 
@@ -102,19 +106,19 @@ export default function Land({ data }: any) {
       >
         <span>
           <Link href={"/services/mechanical-and-civil-engineering"}>
-            <img src="/resized/_DSC2758 (2).JPG" alt="image goes here" />{" "}
+            <Image fill src="/resized/_DSC2758 (2).JPG" alt="image goes here" />{" "}
             <p>Mechanical Engineering</p>{" "}
           </Link>
         </span>
         <span>
           <Link href={"/services/agricultural-engineering"}>
-            <img src="/resized/3.jpg" alt="image goes here" />{" "}
+            <Image fill src="/resized/3.jpg" alt="image goes here" />{" "}
             <p>Agricultural Engineering</p>{" "}
           </Link>
         </span>
         <span>
           <Link href={"/services/road-construction"}>
-            <img src="/resized/2.jpg" alt="image goes here" />{" "}
+            <Image fill src="/resized/2.jpg" alt="image goes here" />{" "}
             <p>Road Construction </p>{" "}
           </Link>
         </span>

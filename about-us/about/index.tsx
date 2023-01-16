@@ -2,6 +2,7 @@ import React from "react";
 import style from "./style.module.scss";
 import Valuecards from "./valueCards";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function About({}) {
   interface valueProps {
