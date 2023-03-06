@@ -1,12 +1,12 @@
 import React, { ReactNode } from "react";
-import Header from "../header/header";
-import Footer from "../footer/footer";
-import Vision from "../vision";
+// import Header from "../header/header";
+// import Footer from "../footer/footer";
+// import Vision from "../vision";
 import style from "./layout.module.scss";
 import styled from "./line.module.scss";
 
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 
 // import Line from "./line";
 import { useScroll, useMotionValueEvent, motion } from "framer-motion";
@@ -23,14 +23,8 @@ export default function Layout({ children }: Props) {
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (latest > 800) {
       setRetra(true);
-      // console.log("Page scroll: ", latest)
-
-      // return {y :-100}
     } else {
       setRetra(false);
-      // console.log("Page scroll: ", latest)
-
-      // return {y :-100}
     }
   });
 

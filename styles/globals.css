@@ -46,29 +46,28 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (width > 960px) {
+@media (min-width: 960px) {
   html {
     font-size: 0.58px;
     /* background-color: red; */
   }
 }
 
-
-@media (width > 960px) {
+@media (min-width: 960px) {
   html {
     font-size: 0.58px;
     /* background-color: red; */
   }
 }
 
-@media (width > 1280px) {
+@media (min-width: 1280px) {
   html {
     font-size: 0.75px;
     /* background-color: rebeccapurple; */
   }
 }
 
-@media (width > 1600px) {
+@media (min-width: 1600px) {
   html {
     font-size: 1px;
     /* background-color: orange; */

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import style from "./line.module.scss";
-import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+// import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
 export default function line() {
   // const { scrollYProgress } = useScroll();
