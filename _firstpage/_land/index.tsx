@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./style.module.scss";
-import Tasks from "./tasks";
+// import Tasks from "./tasks";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";

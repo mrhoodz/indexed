@@ -4,7 +4,7 @@ import Head from "next/head";
 // import styles from "./style.module.scss";
 import Prime from "../_firstpage";
 // const inter = Inter({ subsets: ["latin"] });
-import axios from "axios";
+// import axios from "axios";
 import { GraphQLClient, gql } from "graphql-request";
 // import { GraphQLClient, gql } from "graphql-request";
 
@@ -14,7 +14,10 @@ export default function Home({ data }: any) {
     <>
       <Head>
         <title>Home page</title>
-        <meta name="description" content="Welcome to 5star egineering solutions" />
+        <meta
+          name="description"
+          content="Welcome to 5star egineering solutions"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -25,9 +28,7 @@ export default function Home({ data }: any) {
 }
 
 export async function getServerSideProps(context: any) {
-
-
-const endpoint = "https://sea-lion-app-ggqop.ondigitalocean.app/graphql";
+  const endpoint = "https://sea-lion-app-ggqop.ondigitalocean.app/graphql";
 
   const graphQLClient = new GraphQLClient(endpoint);
 
