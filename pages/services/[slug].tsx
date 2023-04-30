@@ -82,71 +82,71 @@ export async function getServerSideProps(context: any) {
   //   slug: slugId,
   // });
 
-  const graphQLClient = new GraphQLClient(
-    "https://sea-lion-app-ggqop.ondigitalocean.app/graphql"
-  );
+  // const graphQLClient = new GraphQLClient(
+  //   "https://sea-lion-app-ggqop.ondigitalocean.app/graphql"
+  // );
 
   const variables = {
     slug: slugId,
   };
 
-  const query = gql`
-    query ($slug: String!) {
-      services(filters: { slug: { eq: $slug } }) {
-        data {
-          attributes {
-            Name
+  // const query = gql`
+  //   query ($slug: String!) {
+  //     services(filters: { slug: { eq: $slug } }) {
+  //       data {
+  //         attributes {
+  //           Name
 
-            Task {
-              Task
-            }
+  //           Task {
+  //             Task
+  //           }
 
-            Images {
-              __typename
-              ... on UploadFileRelationResponseCollection {
-                data {
-                  attributes {
-                    url
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `;
+  //           Images {
+  //             __typename
+  //             ... on UploadFileRelationResponseCollection {
+  //               data {
+  //                 attributes {
+  //                   url
+  //                 }
+  //               }
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `;
 
-  const queryAll = gql`
-    query {
-      services {
-        data {
-          attributes {
-            Name
-            slug
-            Images {
-              __typename
-              ... on UploadFileRelationResponseCollection {
-                data {
-                  attributes {
-                    url
-                  }
-                }
-              }
-            }
+  // const queryAll = gql`
+  //   query {
+  //     services {
+  //       data {
+  //         attributes {
+  //           Name
+  //           slug
+  //           Images {
+  //             __typename
+  //             ... on UploadFileRelationResponseCollection {
+  //               data {
+  //                 attributes {
+  //                   url
+  //                 }
+  //               }
+  //             }
+  //           }
 
-            Task {
-              Task
-            }
-          }
-        }
-      }
-    }
-  `;
+  //           Task {
+  //             Task
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `;
 
-  const data = await graphQLClient.request(query, variables);
+  // const data = await graphQLClient.request(query, variables);
 
-  const attributes = data.services.data;
+  // const attributes = data.services.data;
   let baseContent;
 
   switch (slugId) {
