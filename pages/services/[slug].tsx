@@ -562,9 +562,9 @@ export async function getServerSideProps(context: any) {
       break;
   }
 
-  const dataAll = await graphQLClient.request(queryAll);
+  // const dataAll = await graphQLClient.request(queryAll);
 
-  const attributesAll = dataAll.services.data;
+  // const attributesAll = dataAll.services.data;
 
   const datad = {
     theName: baseContent,
