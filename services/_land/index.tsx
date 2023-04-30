@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./style.module.scss";
-import  Tasks from "./tasks";
+import Tasks from "./tasks";
 import { motion } from "framer-motion";
 
 export default function Land({ data }: any) {
@@ -36,16 +36,21 @@ export default function Land({ data }: any) {
 
   return (
     <article className={style.article} id="article">
+      {/* {console.log(data[0].attributes.Name)} */}
       <div className={style.overlay}>ve</div>
 
-      <div 
-      // initial={{scale:0.9}} whileInView={{scale:1}}
-       className={style.content}>
+      <div
+        // initial={{scale:0.9}} whileInView={{scale:1}}
+        className={style.content}
+      >
         {/* <h1 className={style.h1}>{data}</h1> */}
         <motion.h1
-              initial={{scale:0.9}} whileInView={{scale:1}}
-
-        className={style.h1}>{data[0].attributes.Name}</motion.h1>
+          initial={{ scale: 0.9 }}
+          whileInView={{ scale: 1 }}
+          className={style.h1}
+        >
+          {data[0].attributes.Name}
+        </motion.h1>
         {/* <h3 className={style.h3}> </h3> */}
 
         <Tasks data={tasksData} />

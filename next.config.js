@@ -4,10 +4,10 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'sea-lion-app-ggqop.ondigitalocean.app',
-        port: '',
-        pathname: '/uploads/**',
+        protocol: "https",
+        hostname: "sea-lion-app-ggqop.ondigitalocean.app",
+        port: "",
+        pathname: "/uploads/**",
       },
     ],
   },

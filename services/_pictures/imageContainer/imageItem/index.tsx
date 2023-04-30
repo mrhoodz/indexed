@@ -9,7 +9,7 @@ export default function ImageItem({ data }: any) {
     src: string;
   }
 
-  // console.log(data)
+  console.log(data);
 
   return (
     <>
@@ -24,7 +24,7 @@ export default function ImageItem({ data }: any) {
             height={1080}
             width={1920}
             className={style.img}
-            src={`https://sea-lion-app-ggqop.ondigitalocean.app${item.attributes.url}`}
+            src={`${item.attributes.url}`}
             alt="image goes here"
           />
         </motion.div>
