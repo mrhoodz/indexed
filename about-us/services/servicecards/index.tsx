@@ -25,7 +25,7 @@ export default function ServiceCards({ data }: any) {
             height={1080}
             className={style.serviceCardImage}
             // src={`https://sea-lion-app-ggqop.ondigitalocean.app${item.url}`}
-            src={`https://sea-lion-app-ggqop.ondigitalocean.app${item.Images.data[0].attributes.url}`}
+            src={`${item.Images.data[0].attributes.url}`}
             alt="services image goes here"
           />
           <p className={style.serviceCardInfo}>{item.Name}</p>
